@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>5.2.8迭代方法</title>
+</head>
+<body>
+<script>
+    var numbers = [1,2,3,4,5,4,3,2,1];
+    var filterResult = numbers.filter(function(item,index,array) {
+        return (item > 2);
+    });
+    document.write(filterResult);
+
+</script>
+</body>
+</html>
