@@ -25,6 +25,20 @@
      */
 
     alert(outer.caller);    //  null
+
+    function outer2() {
+        inner2();
+    }
+    function inner2() {
+        alert(arguments.callee.caller);
+    }
+
+    outer2();    //  返回结果如下：
+    /*
+     *   function outer2() {
+     *       inner2();
+     *   }
+     */
 </script>
 </body>
 </html>
