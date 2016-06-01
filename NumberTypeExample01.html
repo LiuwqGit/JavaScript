@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>5.6.3 Number类型</title>
+</head>
+<body>
+<script>
+    /*
+    *   Number类型--引用类型
+    *   number类型--基本类型
+     */
+    var num = 99;
+    //参数表示小数位数
+    //toFixed()方法可以表示带有0到20个小数位的数值。
+    alert(num.toFixed(4));          //99.0000
+    //e表示法，参数表示小数位数
+    alert(num.toExponential(1));    //9.9e+1
+    alert(num.toExponential(2));    //9.90e+1
+    //自动判断改用哪种方式表示。
+    //参数表示所有数字的位数（不包括指数部分）
+    //toPrecision()方法可以表现1到21位小数
+    alert(num.toPrecision(1));      //1e+2     这个值=100
+    alert(num.toPrecision(2));      //99
+    alert(num.toPrecision(3));      //99.0
+    alert(num.toPrecision(4));      //99.00
+</script>
+</body>
+</html>
