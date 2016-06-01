@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*
+    *   apply()和call()，扩充函数赖以运行的作用域
+    *   对象不需要与方法有耦合关系
+     */
+    window.color = "red";
+    var o = { color: "blue"};
+
+    function sayColor() {
+        alert(this.color);
+    }
+    sayColor();              //  red
+
+    sayColor.call(this);    //red
+    sayColor.call(window);  //red
+    sayColor.call(o);       //blue
+
+
+    /*
+    *   先将sayColor()函数放到了对象o中，然后再通过o来调用它。
+    *   这个结果与上面的call方法等价
+     */
+    o.sayColor1=sayColor;
+    o.sayColor1();  // blue
+
+</script>
+</body>
+</html>
