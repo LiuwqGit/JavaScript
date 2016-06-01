@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>5.6.1 Boolean类型</title>
+</head>
+<body>
+<script>
+
+    /*
+    *   Boolean属于引用类型
+    *   boolean属于基本类型
+     */
+    var falseObject = new Boolean(false);
+    var result1 = falseObject && true;
+
+    var falseValue = false;
+    var result2 = falseValue && true;
+
+    alert(result1);     //  true
+    alert(result2);     //  false
+
+    alert(typeof falseObject);              // object
+    alert(typeof falseValue);                // boolean
+    alert(falseObject instanceof Boolean);  //  true
+    alert(falseValue instanceof Boolean);   //  false
+</script>
+</body>
+</html>
