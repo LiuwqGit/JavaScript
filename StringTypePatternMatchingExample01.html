@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>5.6.3Sting类型</title>
+</head>
+<body>
+<script>
+    var text = "cat, bat, sat, fat";
+    var pattern = /.at/;
+
+    // 与pattern.exec(text)相同
+    var matches= text.match(pattern);
+    alert(matches.index); //0
+    alert(matches[0]);   //"cat"
+    alert(matches.lastIndex);    //0
+</script>
+</body>
+</html>
