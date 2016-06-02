@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>5.4.3 构造函数属性</title>
+</head>
+<body>
+<script>
+    /*
+    *   $1, $2, ……, $9 ,9个用于存储捕获组的构造函数属性
+     */
+    var text = "this has been a short summer";
+    var pattern = /(..)or(.)/g;
+
+    if (pattern.test(text)) {
+        alert(RegExp.$1);   //  sh
+        alert(RegExp.$2);   //  t
+    }
+</script>
+</body>
+</html>

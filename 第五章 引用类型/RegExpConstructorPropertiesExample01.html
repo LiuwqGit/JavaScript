@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>5.4.3 RegExp构造函数属性</title>
+</head>
+<body>
+<script>
+    var text = "this has been a short summer";
+    var pattern = /(.)hort/gi;
+    alert(RegExp.valueOf());         //  function RegExp () { [native code] }
+
+    /*
+    *   注意: Opera、chrome 和 IE 不支持  multiline属性
+    *   捕获组(.),这里的值是s
+    *   长属性组
+     */
+    if (pattern.test(text)) {
+        alert(RegExp.input);            //  this has been a short summer
+        alert(RegExp.leftContext);      //  this has been a
+        alert(RegExp.rightContext);     //  summer
+        alert(RegExp.lastMatch);        //  short
+        alert(RegExp.lastParen);        //  s
+        alert(RegExp.multiline);         //false
+
+        /*
+         *   短属性组,与上面一一对应
+         */
+        alert(RegExp.$_);       //  this has been a short summer
+        alert(RegExp["$`"]);    //  this has been a
+        alert(RegExp["$'"]);    //  summer
+        alert(RegExp["$&"]);    //  short
+        alert(RegExp["$+"]);    //  s
+        alert(RegExp["$*"]);    //false
+
+    }
+
+</script>
+</body>
+</html>
