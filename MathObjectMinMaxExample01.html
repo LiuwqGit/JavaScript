@@ -12,8 +12,10 @@
     alert(min); //2
 
     var values = [1, 2, 5, 8 ,90, 32];
-    max =Math.max.apply(Math, values);
+    max = Math.max.apply(Math, values);
     alert(max); //90
+    max = Math.max.apply(values, values);
+    alert(max);  //90
 
 </script>
 </body>
