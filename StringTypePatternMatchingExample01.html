@@ -44,8 +44,16 @@
         });
     }
     alert(htmlEscape("<p class=\"greeting\">Hello world!</p>"));
-    document.write(htmlEscape("<p class=\"greeting\">Hello world!</p>"));
+    document.write(htmlEscape("<p class=\"greeting\">Hello world!</p>") + "<br />");
     //$lt;p class=$quot;greeting$quot;$gt;Hello world!$lt;/p$gt;
+
+    var colorText = "red, blue, green, yellow";
+    var colors1 = colorText.split(",");     //以逗号分隔
+    var colors2 = colorText.split(",", 2);  //以逗号分隔，生成最多两个
+    var colors3 = colorText.split(/[^\,]+/);    //匹配非\
+    document.write(colors1 + "<br />");     //red, blue, green, yellow
+    document.write(colors2 + "<br />");     //red, blue
+    document.write(colors3 + "<br />");     //,,,,,,,   //["", ",", ",", ",", ""]
 </script>
 </body>
 </html>
