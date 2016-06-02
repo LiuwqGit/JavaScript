@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>localeCommpare()方法</title>
+</head>
+<body>
+<script>
+    /*
+    *   字符串在字母表中排在字符串参数之前，返回一个正数（一般为1）
+    *   字符串在字母表中排在字符串参数之后负，返回一个数（一般为-1）
+    *   字符串=字符串参数，返回0
+     */
+    var stringValue = "yellow";
+    alert(stringValue.localeCompare("brick"));  //1
+    alert(stringValue.localeCompare("yallow")); //1
+    alert(stringValue.localeCompare("xellow")); //1
+    alert(stringValue.localeCompare("yealow")); //1
+    alert(stringValue.localeCompare("yezlow")); //-1
+    alert(stringValue.localeCompare("yellow")); //0
+    alert(stringValue.localeCompare("zoo"));    //-1
+
+    function determineOrder(value) {
+        var result = stringValue.localeCompare(value);
+        if (result > 0) {
+            alert("This string '" + stringValue + "' comes after the string '" + value + "'.");
+        } else if (result < 0) {
+            alert("This string '" + stringValue + "' comes before the string '" + value + "'.");
+        } else {
+            alert("This string '" + stringValue + "' is equal to the string '" + value + "'.");
+        }
+    }
+
+    determineOrder("brick");
+    determineOrder("yellow");
+    determineOrder("zoo");
+</script>
+</body>
+</html>
