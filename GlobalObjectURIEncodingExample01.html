@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>5.7.1 Global对象</title>
+</head>
+<body>
+<script>
+/*
+*   encodeURI()不会对本事属于URI的特殊字符进行编码，例如冒号、正斜杠、问号和＃。
+*   encodeURIComponent()会对它发现的任何非标准字符进行编码。
+ */
+    var uri = "http://www.wrox.com/illegal value.htm#start";
+    document.write(encodeURI(uri) + "<br />");  //  http://www.wrox.com/illegal%20value.htm#start
+    document.write(encodeURIComponent(uri) + "<br />"); //  http%3A%2F%2Fwww.wrox.com%2Fillegal%20value.htm%23start
+
+
+</script>
+</body>
+</html>
