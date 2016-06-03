@@ -87,8 +87,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="414" />
-    <option name="y" value="161" />
+    <option name="x" value="404" />
+    <option name="y" value="32" />
     <option name="width" value="667" />
     <option name="height" value="651" />
   </component>
@@ -415,14 +415,20 @@
       <option name="project" value="LOCAL" />
       <updated>1464937277238</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="修改 webstrom展示形式">
+      <created>1464937303885</created>
+      <option name="number" value="00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1464937303885</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="24134000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="414" y="161" width="667" height="651" extended-state="0" />
+    <frame x="404" y="32" width="667" height="651" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27170238" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -475,7 +481,8 @@
     <MESSAGE value="workspace.xml 更新提交？为啥，你一直出来？" />
     <MESSAGE value="workspace.xml 更新提交，不能忽略整个.dea文档，否则会报错。" />
     <MESSAGE value="    /*&#10;    *   使用访问器属性常用方式，设置一个属性的值会导致其他属性发生变化。&#10;     */" />
-    <option name="LAST_COMMIT_MESSAGE" value="    /*&#10;    *   使用访问器属性常用方式，设置一个属性的值会导致其他属性发生变化。&#10;     */" />
+    <MESSAGE value="修改 webstrom展示形式" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改 webstrom展示形式" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
