@@ -81,8 +81,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="218" />
-    <option name="y" value="337" />
+    <option name="x" value="163" />
+    <option name="y" value="154" />
     <option name="width" value="903" />
     <option name="height" value="689" />
   </component>
@@ -367,14 +367,20 @@
       <option name="project" value="LOCAL" />
       <updated>1464935162404</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="workspace.xml 更新提交？为啥，你一直出来？">
+      <created>1464935541528</created>
+      <option name="number" value="00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1464935541528</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="24134000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="218" y="337" width="903" height="689" extended-state="0" />
+    <frame x="163" y="154" width="903" height="689" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27170238" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -424,7 +430,8 @@
     <MESSAGE value="修改路径" />
     <MESSAGE value="理解对象" />
     <MESSAGE value="将configurable设置为false,表示不能从对象中删除属性。" />
-    <option name="LAST_COMMIT_MESSAGE" value="将configurable设置为false,表示不能从对象中删除属性。" />
+    <MESSAGE value="workspace.xml 更新提交？为啥，你一直出来？" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml 更新提交？为啥，你一直出来？" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
