@@ -373,7 +373,13 @@
       <option name="project" value="LOCAL" />
       <updated>1464935541528</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="workspace.xml 更新提交？为啥，你一直出来？">
+      <created>1464935658564</created>
+      <option name="number" value="00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1464935658564</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
