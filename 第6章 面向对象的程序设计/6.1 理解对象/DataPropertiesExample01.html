@@ -5,22 +5,24 @@
     <title>6.1.1 属性类型</title>
 </head>
 <body>
-<script>
-    /*
-     *   修改默认属性的方法： Object.defineProperty().
-     *   接收三个参数：属性所在的对象、属性的名字和一个描述符对象。
-     *   其中，描述符（descriptor)对象的属性必须是：configurable、enumerable、writable和value。
-     *   IE9，不支持此特性
-     */
+<script>    /*
+ *   修改默认属性的方法： Object.defineProperty().
+ *   接收三个参数：属性所在的对象、属性的名字和一个描述符对象。
+ *   其中，描述符（descriptor)对象的属性必须是：configurable、enumerable、writable和value。
+ *   IE9，不支持此特性
+ */
+
     var person = {};
     Object.defineProperty(person, "name", {
         writeable: true,
         value: "Liuweiqin"
     });
+    alert(person.name);
+    person.name = "Nicholas";
+    alert(person.name);
 
-    alert(person.name);
-    person.name = "Greg";
-    alert(person.name);
+
+
 
 </script>
 </body>
