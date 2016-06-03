@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fba37f64-7560-43a7-8602-d9f4bc2eded4" name="Default" comment="    /*&#10;    *   使用访问器属性常用方式，设置一个属性的值会导致其他属性发生变化。&#10;     */">
+    <list default="true" id="fba37f64-7560-43a7-8602-d9f4bc2eded4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="72c53eb8-6be9-4b4b-8652-777ffe0df169" name="New changelist" comment="" />
@@ -409,7 +409,13 @@
       <option name="project" value="LOCAL" />
       <updated>1464937173475</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="    /*&#10;    *   使用访问器属性常用方式，设置一个属性的值会导致其他属性发生变化。&#10;     */">
+      <created>1464937277238</created>
+      <option name="number" value="00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1464937277238</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
