@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>6.1理解对象</title>
+</head>
+<body>
+<script>
+    /*
+    * person 和person1对象是一样的。都有相同的属性和方法。
+     */
+    var person = new Object();
+    person.name = "Liuweiqin";
+    person.age = 26;
+    person.job = "Software Engineer";
+
+    person.sayName = function () {
+        alert(this.name);
+    };
+
+    alert(person.sayName);
+
+    var person1 = {
+        name : "Liuweiqin",
+        age : 26,
+        job : "Software Engineer",
+        sayName : function () {
+            alert(this.name);
+        }
+    };
+
+
+</script>
+</body>
+</html>
