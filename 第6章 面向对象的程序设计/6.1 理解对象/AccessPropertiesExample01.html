@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>6.1.1 属性类型  - 2 访问器属性 </title>
+</head>
+<body>
+<script>
+    /*
+    *   使用访问器属性常用方式，设置一个属性的值会导致其他属性发生变化。
+     */
+    var book = {
+      _year: 2009,
+        edition: 1
+    };
+
+    Object.defineProperty(book, "year", {
+        get: function() {
+            return this._year;
+        },
+        set: function(newValue) {
+            if (newValue > 2009) {
+                this._year = newValue;
+                this.edition += newValue - 2009;
+            }
+        }
+    });
+
+    book.year = 2016;
+    alert(book.edition);    //  8   【 += 】
+    alert(book.year);   //  2016
+    alert(book._year);  //  2016
+
+</script>
+</body>
+</html>
