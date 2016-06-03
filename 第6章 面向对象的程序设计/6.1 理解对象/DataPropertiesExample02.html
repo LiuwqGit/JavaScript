@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>6.1.1 </title>
+</head>
+<body>
+<script>
+    /*
+    * 将configurable设置为false,表示不能从对象中删除属性。
+     */
+    var person = {};
+    Object.defineProperty(person, "name", {
+        configurable: false,
+        value: "Liuweiqin"
+    });
+    alert(person.name);
+    delete person.name;
+    alert(person.name);
+</script>
+</body>
+</html>
