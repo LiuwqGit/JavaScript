@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>6.1.1 属性类型  - 2 访问器属性</title>
+</head>
+<body>
+<script>
+    var book = {
+        _year: 2009,
+        edition: 1
+    };
+    //定义访问器的旧有方法 ,IE9 不支持此方法
+    book.__defineGetter__("year", function() {
+        return this._year;
+    });
+    book.__defineSetter__("year", function(newValue) {
+        if (newValue > 2009) {
+            this._year = newValue;
+            this.edition += newValue - 2009;
+        }
+    });
+
+    book.year = 2016;
+    alert(book.edition); // 8
+</script>
+</body>
+</html>
