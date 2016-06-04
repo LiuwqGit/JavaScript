@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fba37f64-7560-43a7-8602-d9f4bc2eded4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/第6章 面向对象的程序设计/6.2 创建对象/FactoryPatternExample01.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="72c53eb8-6be9-4b4b-8652-777ffe0df169" name="New changelist" comment="" />
@@ -363,7 +362,7 @@
       <workItem from="1464880947856" duration="2179000" />
       <workItem from="1464972441297" duration="155000" />
       <workItem from="1464972667607" duration="882000" />
-      <workItem from="1465003656353" duration="6693000" />
+      <workItem from="1465003656353" duration="6705000" />
     </task>
     <task id="LOCAL-00001" summary="Date类型.new Date();  Date.Parse(); Date.UTC();">
       <created>1464624382386</created>
@@ -505,11 +504,18 @@
       <option name="project" value="LOCAL" />
       <updated>1465011629311</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="工厂模式，抽象了创建具体对象的过程">
+      <created>1465012069119</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1465012069120</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31864000" />
+    <option name="totallyTimeSpent" value="31876000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -563,7 +569,8 @@
     <MESSAGE value="理解对象" />
     <MESSAGE value="使用Object.defineProperties()方法， 定义了两个数据属性（_year 和 edition）和 一个访问器属性(year)." />
     <MESSAGE value="    *   数据属性,该属性对象具有的属性有：configurable、enumerable、writable和value&#10;    *   访问器属性，该对象具有的属性有：configurable、enumerable、get和set" />
-    <option name="LAST_COMMIT_MESSAGE" value="    *   数据属性,该属性对象具有的属性有：configurable、enumerable、writable和value&#10;    *   访问器属性，该对象具有的属性有：configurable、enumerable、get和set" />
+    <MESSAGE value="工厂模式，抽象了创建具体对象的过程" />
+    <option name="LAST_COMMIT_MESSAGE" value="工厂模式，抽象了创建具体对象的过程" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="false" />
   </component>
   <component name="XDebuggerManager">
