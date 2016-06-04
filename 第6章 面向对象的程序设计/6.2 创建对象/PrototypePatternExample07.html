@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>更简单的原型语法</title>
+</head>
+<body>
+<script>
+    /*
+     *   使用一个包含所有属性和方法的对象字面量来重写整个原型对象
+     */
+    function Person() {
+
+    }
+    Person.prototype = {
+        name: "Liu",
+        age: 26,
+        job: "Software Engineer",
+        sayName: function () {
+            alert(this.name);
+        }
+    };
+
+</script>
+</body>
+</html>
