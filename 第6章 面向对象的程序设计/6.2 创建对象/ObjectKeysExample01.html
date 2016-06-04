@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>原型与in操作符</title>
+</head>
+<body>
+<script>
+    /*
+     *   Object.keys()方法，取得对象上所有可枚举的实例属性，
+     *   此方法，接收一个对象作为参数，返回一个包含所有可枚举属性的字符串数组。
+     */
+    function Person() {
+
+    }
+    Person.prototype.name = "Liu";
+    Person.prototype.age = 26;
+    Person.prototype.job = "Software Engineer";
+    Person.prototype.sayName = function () {
+        alert(this.name);
+    };
+
+    var keys = Object.keys(Person.prototype);
+    alert(keys);
+    document.write(keys);   //  name,age,job,sayName
+    var p1 = new Person();
+    p1.name = "lilei";
+    p1.age = 29;
+    var p1Keys = Object.keys(p1);
+    document.write(p1Keys); //  name,age
+
+</script>
+</body>
+</html>
