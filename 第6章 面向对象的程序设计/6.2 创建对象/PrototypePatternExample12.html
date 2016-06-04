@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>原型对象问题</title>
+</head>
+<body>
+<script>
+    /*
+     *   共享本性导致的
+     *   一般不单独使用原型模式。
+     *   实例一般都要有属于自己的全部属性；
+     */
+    function Person() {
+
+    }
+    Person.prototype = {
+        constructor: Person,
+        name: "Liu",
+        age: 26,
+        job: "Software Engineer",
+        friends: ["Wei", "Qin"],
+        sayName: function () {
+            alert(this.name);
+        }
+    };
+
+    var person1 = new Person();
+    var person2 = new Person();
+    person1.friends.push("Nicholas");
+    alert(person1.friends);    //  Wei,Qin,Nicholas
+    document.write(person1.friends);    //  Wei,Qin,Nicholas
+    alert(person1.friends === person2.friends); //  true
+</script>
+</body>
+</html>
