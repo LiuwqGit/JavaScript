@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--suppress JSUnresolvedVariable -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>6.1.3 读取属性的特性</title>
+</head>
+<body>
+<script>
+    var book = {};
+    Object.defineProperties(book, {
+        _year: {
+            writable: true,
+            value: 2009
+        },
+        edition: {
+            writable: true,
+            value: 1
+        },
+        year: {
+            get: function () {
+                return this._year;
+            },
+            set: function (newValue) {
+                if (newValue > 2009) {
+                    this._year = newValue;
+                    this.edition += newValue - 2009;
+                }
+            }
+        }
+    });
+    /*
+    *   以上，定义了两个数据属性_year、edition，一个访问器属性year
+    *   数据属性,该属性对象具有的属性有：configurable、enumerable、writable和value
+    *   访问器属性，该对象具有的属性有：configurable、enumerable、get和set
+     */
+    var descriptor = Object.getOwnPropertyDescriptor(book,"_year");
+    alert(descriptor.writable);     //  true
+    alert(descriptor.configurable); // false
+    alert(descriptor.value);        //  2009
+    alert(descriptor.enumerable);  //  false
+    alert(typeof descriptor.get);   //  undefined
+
+    var visitorDescriptor = Object.getOwnPropertyDescriptor(book, "year");
+    alert(visitorDescriptor.writable);     //  undefined
+    alert(visitorDescriptor.configurable); // false
+    alert(visitorDescriptor.value);        //  undefined
+    alert(visitorDescriptor.enumerable);  //  false
+    alert(typeof visitorDescriptor.get);   //function
+</script>
+</body>
+</html>

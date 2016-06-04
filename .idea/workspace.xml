@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fba37f64-7560-43a7-8602-d9f4bc2eded4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/第6章 面向对象的程序设计/6.1 理解对象/MultiplePropertiesExample01.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/第6章 面向对象的程序设计/6.1 理解对象/GetPropertyDescriptorExample01.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="72c53eb8-6be9-4b4b-8652-777ffe0df169" name="New changelist" comment="" />
@@ -27,6 +27,9 @@
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
+          <provider editor-type-id="MarkdownFxPreviewEditor">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
               <first_editor relative-caret-position="0">
@@ -35,9 +38,6 @@
               </first_editor>
               <second_editor />
             </state>
-          </provider>
-          <provider editor-type-id="MarkdownFxPreviewEditor">
-            <state />
           </provider>
         </entry>
       </file>
@@ -81,11 +81,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MultiplePropertiesExample01.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MultiplePropertiesExample01.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/第6章 面向对象的程序设计/6.1 理解对象/MultiplePropertiesExample01.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="9" column="80" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="80" />
+            <state relative-caret-position="330">
+              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="32" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GetPropertyDescriptorExample01.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/第6章 面向对象的程序设计/6.1 理解对象/GetPropertyDescriptorExample01.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -126,6 +136,7 @@
         <option value="$PROJECT_DIR$/StringTypePatternMatchingExample01.html" />
         <option value="$PROJECT_DIR$/第6章 面向对象的程序设计/6.1 理解对象/CreatingObjectsExample01.html" />
         <option value="$PROJECT_DIR$/第6章 面向对象的程序设计/6.1 理解对象/MultiplePropertiesExample01.html" />
+        <option value="$PROJECT_DIR$/第6章 面向对象的程序设计/6.1 理解对象/GetPropertyDescriptorExample01.html" />
       </list>
     </option>
   </component>
@@ -166,7 +177,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -205,7 +216,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -215,21 +226,21 @@
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="SearchEverywhereHistoryKey" value="font&#9;null&#9;null" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="117" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="291" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="124" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="297" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="129" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="305" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="383" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="976" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="125" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="404" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="121" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="400" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="126" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="405" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="381" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="660" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
@@ -322,7 +333,8 @@
       <workItem from="1464789093562" duration="5098000" />
       <workItem from="1464880947856" duration="2179000" />
       <workItem from="1464972441297" duration="155000" />
-      <workItem from="1464972667607" duration="847000" />
+      <workItem from="1464972667607" duration="882000" />
+      <workItem from="1465003656353" duration="5746000" />
     </task>
     <task id="LOCAL-00001" summary="Date类型.new Date();  Date.Parse(); Date.UTC();">
       <created>1464624382386</created>
@@ -443,11 +455,18 @@
       <option name="project" value="LOCAL" />
       <updated>1464885322723</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="使用Object.defineProperties()方法， 定义了两个数据属性（_year 和 edition）和 一个访问器属性(year).">
+      <created>1464973522811</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1464973522811</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25136000" />
+    <option name="totallyTimeSpent" value="30917000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -456,7 +475,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1790416" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34920636" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3491892" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295964" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -499,7 +518,8 @@
     <MESSAGE value="text.replace(), $n  第n个捕获组的子字符串" />
     <MESSAGE value="修改路径" />
     <MESSAGE value="理解对象" />
-    <option name="LAST_COMMIT_MESSAGE" value="理解对象" />
+    <MESSAGE value="使用Object.defineProperties()方法， 定义了两个数据属性（_year 和 edition）和 一个访问器属性(year)." />
+    <option name="LAST_COMMIT_MESSAGE" value="使用Object.defineProperties()方法， 定义了两个数据属性（_year 和 edition）和 一个访问器属性(year)." />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="false" />
   </component>
   <component name="XDebuggerManager">
@@ -508,6 +528,9 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="0">
@@ -517,8 +540,59 @@
           <second_editor />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/第6章 面向对象的程序设计/6.1 理解对象/CreatingObjectsExample01.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/第6章 面向对象的程序设计/6.1 理解对象/DataPropertiesExample03.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/第6章 面向对象的程序设计/6.1 理解对象/DataPropertiesExample02.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/第6章 面向对象的程序设计/6.1 理解对象/DataPropertiesExample01.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/第6章 面向对象的程序设计/6.1 理解对象/MultiplePropertiesExample01.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider editor-type-id="MarkdownFxPreviewEditor">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/第6章 面向对象的程序设计/6.1 理解对象/CreatingObjectsExample01.html">
@@ -530,6 +604,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="0">
@@ -538,9 +615,6 @@
           </first_editor>
           <second_editor />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/第6章 面向对象的程序设计/6.1 理解对象/CreatingObjectsExample01.html">
@@ -586,6 +660,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="0">
@@ -594,9 +671,6 @@
           </first_editor>
           <second_editor />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/第6章 面向对象的程序设计/6.1 理解对象/CreatingObjectsExample01.html">
@@ -633,8 +707,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/第6章 面向对象的程序设计/6.1 理解对象/MultiplePropertiesExample01.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="9" column="80" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="80" />
+        <state relative-caret-position="330">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="32" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/第6章 面向对象的程序设计/6.1 理解对象/GetPropertyDescriptorExample01.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
           <folding />
         </state>
       </provider>
