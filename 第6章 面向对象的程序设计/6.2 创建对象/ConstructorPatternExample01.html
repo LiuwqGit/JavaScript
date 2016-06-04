@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>6.2.2 构造函数模式</title>
+</head>
+<body>
+<script>
+    /*
+     *   构造函数，可以创建特定类型的对象
+     */
+    function Person(name, age, job) {
+        this.name = name;
+        this.age = age;
+        this.job = job;
+        this.sayName = function () {
+            alert(this.name);
+        };
+    }
+    /*
+     *   使用以下方式调用构造函数，需要经历的步骤
+     *   1：创建一个新对象
+     *   2：将构造函数的作用域赋给该新对象（this指向了这个新对象）
+     *   3：执行构造函数的代码（为这个新对象添加属性）
+     *   4：返回新对象
+     */
+    var person1 = new Person("Liu", 26, "Software Engineer");
+    var person2 = new Person("wei", 28, "Doctor");
+    alert(person1.constructor == Person);   //  true
+    alert(person2.constructor == Person);   //  true
+
+    alert(person1 instanceof Object);   //  true
+    alert(person1 instanceof Person);   //  true
+    alert(person2 instanceof Object);   //  true
+    alert(person2 instanceof Person);   //  true
+
+
+</script>
+</body>
+</html>
