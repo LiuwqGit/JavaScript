@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>6.2.2 -2 构造函数的问题</title>
+</head>
+<body>
+<script>
+    function Person(name, age, job) {
+        this.name = name;
+        this.age = age;
+        this.job = job;
+        this.sayName = sayName;
+    }
+    function sayName() {
+        alert(this.name);
+    }
+    var person1 = new Person("Liu", 26, "Software Engineer");
+    var person2 = new Person("Wei", 28, "Doctor");
+    alert(person1.age);         //  26
+    alert(person1.sayName);     //  返回函数sayName()的整个代码。
+    alert(person1.sayName());   //undefined    执行此要经过两步，第一个执行流，执行到sayName()返回的结果，第二个，person1.sayName()最终返回的结果undefined
+    alert(person2.age);         //28
+    alert(person2.sayName);     //  返回函数sayName()的整个代码。
+    alert(person2.sayName());   //undefined    执行此要经过两步，第一个执行流，执行到sayName()返回的结果，第二个，person1.sayName()最终返回的结果u
+
+</script>
+</body>
+</html>

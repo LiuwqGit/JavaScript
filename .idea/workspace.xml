@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fba37f64-7560-43a7-8602-d9f4bc2eded4" name="Default" comment="构造函数，可以创建特定类型的对象.将构造函数当作函数">
+    <list default="true" id="fba37f64-7560-43a7-8602-d9f4bc2eded4" name="Default" comment="构造函数，可以创建特定类型的对象 将内部方法，定义到外部全部作用域&#10;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/第6章 面向对象的程序设计/6.2 创建对象/ConstructorPatternExample03.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/第6章 面向对象的程序设计/6.2 创建对象/ConstructorPatternExample02.html" afterPath="$PROJECT_DIR$/第6章 面向对象的程序设计/6.2 创建对象/ConstructorPatternExample02.html" />
     </list>
     <list id="72c53eb8-6be9-4b4b-8652-777ffe0df169" name="New changelist" comment="" />
     <ignored path="JavaScript.iws" />
@@ -25,11 +25,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ConstructorPatternExample02.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ConstructorPatternExample02.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/第6章 面向对象的程序设计/6.2 创建对象/ConstructorPatternExample02.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+            <state relative-caret-position="187">
+              <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConstructorPatternExample03.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/第6章 面向对象的程序设计/6.2 创建对象/ConstructorPatternExample03.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="427">
+              <caret line="24" column="110" selection-start-line="24" selection-start-column="110" selection-end-line="24" selection-end-column="110" />
               <folding />
             </state>
           </provider>
@@ -57,8 +67,8 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
-        <option value="刘伟勤" />
         <option value="liuwq" />
+        <option value="刘伟勤" />
       </list>
     </option>
     <option name="UPDATE_TYPE" value="MERGE" />
@@ -85,6 +95,7 @@
         <option value="$PROJECT_DIR$/第6章 面向对象的程序设计/6.2 创建对象/FactoryPatternExample01.html" />
         <option value="$PROJECT_DIR$/第6章 面向对象的程序设计/6.2 创建对象/ConstructorPatternExample01.html" />
         <option value="$PROJECT_DIR$/第6章 面向对象的程序设计/6.2 创建对象/ConstructorPatternExample02.html" />
+        <option value="$PROJECT_DIR$/第6章 面向对象的程序设计/6.2 创建对象/ConstructorPatternExample03.html" />
       </list>
     </option>
   </component>
@@ -141,20 +152,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="JavaScript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JavaScript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JavaScript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="第五章 引用类型" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -310,7 +307,7 @@
       <workItem from="1464880947856" duration="2179000" />
       <workItem from="1464972441297" duration="155000" />
       <workItem from="1464972667607" duration="882000" />
-      <workItem from="1465003656353" duration="10440000" />
+      <workItem from="1465003656353" duration="11652000" />
     </task>
     <task id="LOCAL-00001" summary="Date类型.new Date();  Date.Parse(); Date.UTC();">
       <created>1464624382386</created>
@@ -480,11 +477,18 @@
       <option name="project" value="LOCAL" />
       <updated>1465015319387</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="构造函数，可以创建特定类型的对象.将构造函数当作函数&#10;">
+      <created>1465016467335</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1465016467335</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35611000" />
+    <option name="totallyTimeSpent" value="36823000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -551,7 +555,9 @@
     <MESSAGE value=" 构造函数，可以创建特定类型的对象" />
     <MESSAGE value="构造函数，可以创建特定类型的对象" />
     <MESSAGE value="构造函数，可以创建特定类型的对象.将构造函数当作函数" />
-    <option name="LAST_COMMIT_MESSAGE" value="构造函数，可以创建特定类型的对象.将构造函数当作函数" />
+    <MESSAGE value="构造函数，可以创建特定类型的对象.将构造函数当作函数&#10;" />
+    <MESSAGE value="构造函数，可以创建特定类型的对象 将内部方法，定义到外部全部作用域&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="构造函数，可以创建特定类型的对象 将内部方法，定义到外部全部作用域&#10;" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="false" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -784,8 +790,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/第6章 面向对象的程序设计/6.2 创建对象/ConstructorPatternExample02.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+        <state relative-caret-position="187">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/第6章 面向对象的程序设计/6.2 创建对象/ConstructorPatternExample03.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="24" column="110" selection-start-line="24" selection-start-column="110" selection-end-line="24" selection-end-column="110" />
           <folding />
         </state>
       </provider>
