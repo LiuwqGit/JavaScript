@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>6.2.3 原型模式</title>
+</head>
+<body>
+<script>
+    /*
+     *   实例化构造函数，向实例添加与原型一样的属性，那么原型中的属性会被屏蔽。
+     *   使用delete操作符删除属性，从而可以重新访问原型中的属性
+     */
+    function Person() {
+
+    }
+    Person.prototype.name = "Liu";
+    Person.prototype.age = 26;
+    Person.prototype.job = "Software Engineer";
+    Person.prototype.sayName = function () {
+        alert(this.name);
+    };
+
+    var person1 = new Person();
+    var person2 = new Person();
+    alert(person1.name);    //  Liu
+    alert(person2.name);    //  Liu
+    person1.name = "Nicholas";
+    alert(person1.name);    //  Nicholas    来自对象实例
+    alert(person2.name);    //  Liu         来自原型
+
+    delete person1.name;
+    alert(person1.name);    //  Liu    来自原型
+    alert(person2.name);     //  Liu    来自原型
+
+</script>
+</body>
+</html>
