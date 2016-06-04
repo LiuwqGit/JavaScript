@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fba37f64-7560-43a7-8602-d9f4bc2eded4" name="Default" comment="构造函数，可以创建特定类型的对象">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/第6章 面向对象的程序设计/6.2 创建对象/ConstructorPatternExample01.html" />
+    <list default="true" id="fba37f64-7560-43a7-8602-d9f4bc2eded4" name="Default" comment="构造函数，可以创建特定类型的对象.将构造函数当作函数">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/第6章 面向对象的程序设计/6.2 创建对象/ConstructorPatternExample02.html" afterPath="$PROJECT_DIR$/第6章 面向对象的程序设计/6.2 创建对象/ConstructorPatternExample02.html" />
     </list>
     <list id="72c53eb8-6be9-4b4b-8652-777ffe0df169" name="New changelist" comment="" />
     <ignored path="JavaScript.iws" />
@@ -25,100 +25,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider editor-type-id="MarkdownFxPreviewEditor">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CreatingObjectsExample01.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/第6章 面向对象的程序设计/6.1 理解对象/CreatingObjectsExample01.html">
+      <file leaf-file-name="ConstructorPatternExample02.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/第6章 面向对象的程序设计/6.2 创建对象/ConstructorPatternExample02.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+            <state relative-caret-position="217">
+              <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataPropertiesExample03.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/第6章 面向对象的程序设计/6.1 理解对象/DataPropertiesExample03.html">
+      <file leaf-file-name="FunctionTypeCallExample01.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/第五章 引用类型/FunctionTypeCallExample01.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataPropertiesExample02.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/第6章 面向对象的程序设计/6.1 理解对象/DataPropertiesExample02.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataPropertiesExample01.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/第6章 面向对象的程序设计/6.1 理解对象/DataPropertiesExample01.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MultiplePropertiesExample01.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/第6章 面向对象的程序设计/6.1 理解对象/MultiplePropertiesExample01.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="32" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GetPropertyDescriptorExample01.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/第6章 面向对象的程序设计/6.1 理解对象/GetPropertyDescriptorExample01.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FactoryPatternExample01.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/第6章 面向对象的程序设计/6.2 创建对象/FactoryPatternExample01.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="469">
-              <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
-              <folding>
-                <marker date="1465012060432" expanded="true" signature="31:552" ph="..." />
-                <marker date="1465012060432" expanded="true" signature="110:544" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConstructorPatternExample01.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/第6章 面向对象的程序设计/6.2 创建对象/ConstructorPatternExample01.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -163,6 +84,7 @@
         <option value="$PROJECT_DIR$/第6章 面向对象的程序设计/6.1 理解对象/GetPropertyDescriptorExample01.html" />
         <option value="$PROJECT_DIR$/第6章 面向对象的程序设计/6.2 创建对象/FactoryPatternExample01.html" />
         <option value="$PROJECT_DIR$/第6章 面向对象的程序设计/6.2 创建对象/ConstructorPatternExample01.html" />
+        <option value="$PROJECT_DIR$/第6章 面向对象的程序设计/6.2 创建对象/ConstructorPatternExample02.html" />
       </list>
     </option>
   </component>
@@ -232,6 +154,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="第五章 引用类型" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaScript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaScript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="第6章 面向对象的程序设计" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -251,10 +187,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="第6章 面向对象的程序设计" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="6.1 理解对象" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -378,7 +310,7 @@
       <workItem from="1464880947856" duration="2179000" />
       <workItem from="1464972441297" duration="155000" />
       <workItem from="1464972667607" duration="882000" />
-      <workItem from="1465003656353" duration="8487000" />
+      <workItem from="1465003656353" duration="10440000" />
     </task>
     <task id="LOCAL-00001" summary="Date类型.new Date();  Date.Parse(); Date.UTC();">
       <created>1464624382386</created>
@@ -534,11 +466,25 @@
       <option name="project" value="LOCAL" />
       <updated>1465012077766</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="构造函数，可以创建特定类型的对象">
+      <created>1465013871905</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1465013871905</updated>
+    </task>
+    <task id="LOCAL-00024" summary="构造函数，可以创建特定类型的对象">
+      <created>1465015319387</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1465015319387</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33658000" />
+    <option name="totallyTimeSpent" value="35611000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -551,11 +497,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1790416" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30486485" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30486485" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3491892" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -604,7 +550,8 @@
     <MESSAGE value="工厂模式，抽象了创建具体对象的过程" />
     <MESSAGE value=" 构造函数，可以创建特定类型的对象" />
     <MESSAGE value="构造函数，可以创建特定类型的对象" />
-    <option name="LAST_COMMIT_MESSAGE" value="构造函数，可以创建特定类型的对象" />
+    <MESSAGE value="构造函数，可以创建特定类型的对象.将构造函数当作函数" />
+    <option name="LAST_COMMIT_MESSAGE" value="构造函数，可以创建特定类型的对象.将构造函数当作函数" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="false" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -821,8 +768,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/第6章 面向对象的程序设计/6.2 创建对象/ConstructorPatternExample01.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        <state relative-caret-position="60">
+          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/第五章 引用类型/FunctionTypeCallExample01.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/第6章 面向对象的程序设计/6.2 创建对象/ConstructorPatternExample02.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
           <folding />
         </state>
       </provider>

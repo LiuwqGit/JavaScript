@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>6.2.2 -1 将构造函数当作函数</title>
+</head>
+<body>
+<script>
+    function Person(name, age, job) {
+        this.name = name;
+        this.age = age;
+        this.job = job;
+        this.sayName = function () {
+            alert(this.name);
+        };
+    }
+    //当作构造函数使用
+    var person1 = new Person("Liu", 26, "Software Engineer");
+    person1.sayName();   //  Liu
+
+    //作为普通函数调用
+    Person("Wei", 26, "Software Engineer");
+    window.sayName();   //  Liu
+
+    //在另一个对象的作用域中调用
+    //Person.call()，扩充函数Person的作用域
+    var o = new Object();
+    Person.call(o, "Qin", 26, "Software Engineer");
+    o.sayName();    //  Liu
+
+</script>
+</body>
+</html>
