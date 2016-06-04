@@ -31,6 +31,7 @@
      *   上面的例子展示了，constructor属性，不再指向Person了。
      *   如果想要constructor值指向Person，则需要特意将constructor设置回适当的值
      *   在Person.prototype 字面量对象中添加一条语句 constructor : Person
+     *   使用这种方式的话，会重设constructor属性，导致它的[[Enumerable]]特性设置为true.
      */
 
 
