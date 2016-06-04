@@ -34,6 +34,12 @@
      */
 
 
+    //重设构造函数
+    Object.defineProperty(Person.prototype, "constructor", {
+        enumerable: false,
+        value: Person
+    });
+
 </script>
 </body>
 </html>
