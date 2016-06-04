@@ -10,6 +10,7 @@
      *   实例化构造函数，向实例添加与原型一样的属性，那么原型中的属性会被屏蔽。
      *   使用delete操作符删除属性，从而可以重新访问原型中的属性
      *   使用hasOwnProperty()方法，可以检测一个属性是存在于实例中，还是原型中。
+     *   in  通过对象能够访问给定属性时，返回true。
      */
     function Person() {
 
@@ -25,23 +26,29 @@
     var person2 = new Person();
     alert(person1.name);    //  Liu
     alert(person1.hasOwnProperty("name"));  //  false
+    alert("name" in person1);   //  true
 
     alert(person2.name);    //  Liu
     alert(person2.hasOwnProperty("name"));  //  false
+    alert("name" in person2);   //  true
 
     person1.name = "Nicholas";
     alert(person1.name);    //  Nicholas    来自对象实例
     alert(person1.hasOwnProperty("name"));  //  true
+    alert("name" in person1);   //  true
 
     alert(person2.name);    //  Liu         来自原型
     alert(person2.hasOwnProperty("name"));  //  false
+    alert("name" in person2);   //  true
 
     delete person1.name;
     alert(person1.name);    //  Liu    来自原型
     alert(person1.hasOwnProperty("name"));  //  false
+    alert("name" in person1);   //  true
 
     alert(person2.name);     //  Liu    来自原型
     alert(person2.hasOwnProperty("name"));  //  false
+    alert("name" in person2);   //  true
 
 </script>
 </body>
