@@ -21,6 +21,19 @@
         }
     };
 
+    var friend = new Person();
+    alert(friend instanceof Object);    //  true
+    alert(friend instanceof Person);    //  true
+    alert(friend.constructor == Person);    //  false
+    alert(friend.constructor == Object);    //  true
+
+    /*
+     *   上面的例子展示了，constructor属性，不再指向Person了。
+     *   如果想要constructor值指向Person，则需要特意将constructor设置回适当的值
+     *   在Person.prototype 字面量对象中添加一条语句 constructor : Person
+     */
+
+
 </script>
 </body>
 </html>
