@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>4原型的动态性</title>
+</head>
+<body>
+<script>
+    function Person() {
+
+    }
+    Person.prototype = {
+        name: "Liu",
+        age: 26,
+        job: "Software Engineer",
+        sayName: function () {
+            alert(this.name);
+        }
+    };
+
+    var friend = new Person();
+    Person.prototype.sayHi = function () {
+        alert("Hi");
+    };
+
+    friend.sayHi();    //  Hi
+
+</script>
+</body>
+</html>
