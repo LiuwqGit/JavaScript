@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fba37f64-7560-43a7-8602-d9f4bc2eded4" name="Default" comment="构造函数，可以创建特定类型的对象 将内部方法，定义到外部全部作用域&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/第6章 面向对象的程序设计/6.2 创建对象/ConstructorPatternExample03.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/第6章 面向对象的程序设计/6.2 创建对象/ConstructorPatternExample03.html" afterPath="$PROJECT_DIR$/第6章 面向对象的程序设计/6.2 创建对象/ConstructorPatternExample03.html" />
     </list>
     <list id="72c53eb8-6be9-4b4b-8652-777ffe0df169" name="New changelist" comment="" />
     <ignored path="JavaScript.iws" />
@@ -38,8 +38,8 @@
       <file leaf-file-name="ConstructorPatternExample03.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/第6章 面向对象的程序设计/6.2 创建对象/ConstructorPatternExample03.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="24" column="110" selection-start-line="24" selection-start-column="110" selection-end-line="24" selection-end-column="110" />
+            <state relative-caret-position="157">
+              <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -307,7 +307,7 @@
       <workItem from="1464880947856" duration="2179000" />
       <workItem from="1464972441297" duration="155000" />
       <workItem from="1464972667607" duration="882000" />
-      <workItem from="1465003656353" duration="11652000" />
+      <workItem from="1465003656353" duration="11768000" />
     </task>
     <task id="LOCAL-00001" summary="Date类型.new Date();  Date.Parse(); Date.UTC();">
       <created>1464624382386</created>
@@ -484,11 +484,18 @@
       <option name="project" value="LOCAL" />
       <updated>1465016467335</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="构造函数，可以创建特定类型的对象 将内部方法，定义到外部全部作用域&#10;">
+      <created>1465017670899</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1465017670899</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36823000" />
+    <option name="totallyTimeSpent" value="36939000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -798,8 +805,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/第6章 面向对象的程序设计/6.2 创建对象/ConstructorPatternExample03.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="24" column="110" selection-start-line="24" selection-start-column="110" selection-end-line="24" selection-end-column="110" />
+        <state relative-caret-position="157">
+          <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
           <folding />
         </state>
       </provider>
