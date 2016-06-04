@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>6.2.3 原型模式</title>
+</head>
+<body>
+<script>
+    /*
+     *   实例化构造函数，向实例添加与原型一样的属性，那么原型中的属性会被屏蔽。
+     *   使用hasOwnProperty()方法，可以检测一个属性是存在于实例中，还是原型中。存在原型中，false，存在实例中，true
+     *   in  通过对象能够访问给定属性时，返回true。
+     */
+    function Person() {
+
+    }
+    Person.prototype.name = "Liu";
+    Person.prototype.age = 26;
+    Person.prototype.job = "Software Engineer";
+    Person.prototype.sayName = function () {
+        alert(this.name);
+    };
+
+    /*
+     *   此函数，判断name属性是否在原型中,是，true，否false
+     */
+    function hasPrototypeProperty(object, name) {
+        return !object.hasOwnProperty(name) && (name in object);
+    }
+
+    var person = new Person();
+    alert(hasPrototypeProperty(person, "name"));  //  true
+    person.name = "Gray";
+    alert(hasPrototypeProperty(person, "name"));  //  false
+
+
+</script>
+</body>
+</html>
