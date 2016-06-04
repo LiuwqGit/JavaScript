@@ -9,6 +9,7 @@
     /*
      *   Object.keys()方法，取得对象上所有可枚举的实例属性，
      *   此方法，接收一个对象作为参数，返回一个包含所有可枚举属性的字符串数组。
+     *   如果想要得到所有实例属性，无论是否可枚举，都可以使用Object.getOwnPropertyNames()方法。
      */
     function Person() {
 
@@ -22,12 +23,18 @@
 
     var keys = Object.keys(Person.prototype);
     alert(keys);
-    document.write(keys);   //  name,age,job,sayName
+    document.write(keys + "<br />");   //  name,age,job,sayName
     var p1 = new Person();
     p1.name = "lilei";
     p1.age = 29;
     var p1Keys = Object.keys(p1);
-    document.write(p1Keys); //  name,age
+    document.write(p1Keys + "<br />"); //  name,age
+
+    var p1AllKeys = Object.getOwnPropertyNames(p1);
+    document.write(p1AllKeys + "<br />");  //  name,age
+
+    var allKeys = Object.getOwnPropertyNames(Person.prototype);
+    document.write(allKeys);  //  constructor,name,age,job,sayName
 
 </script>
 </body>
