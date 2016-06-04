@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fba37f64-7560-43a7-8602-d9f4bc2eded4" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/第6章 面向对象的程序设计/6.2 创建对象/FactoryPatternExample01.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="72c53eb8-6be9-4b4b-8652-777ffe0df169" name="New changelist" comment="" />
@@ -90,11 +91,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GetPropertyDescriptorExample01.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GetPropertyDescriptorExample01.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/第6章 面向对象的程序设计/6.1 理解对象/GetPropertyDescriptorExample01.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
               <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FactoryPatternExample01.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/第6章 面向对象的程序设计/6.2 创建对象/FactoryPatternExample01.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -136,6 +147,7 @@
         <option value="$PROJECT_DIR$/第6章 面向对象的程序设计/6.1 理解对象/CreatingObjectsExample01.html" />
         <option value="$PROJECT_DIR$/第6章 面向对象的程序设计/6.1 理解对象/MultiplePropertiesExample01.html" />
         <option value="$PROJECT_DIR$/第6章 面向对象的程序设计/6.1 理解对象/GetPropertyDescriptorExample01.html" />
+        <option value="$PROJECT_DIR$/第6章 面向对象的程序设计/6.2 创建对象/FactoryPatternExample01.html" />
       </list>
     </option>
   </component>
@@ -206,6 +218,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="第6章 面向对象的程序设计" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="6.2 创建对象" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -347,7 +363,7 @@
       <workItem from="1464880947856" duration="2179000" />
       <workItem from="1464972441297" duration="155000" />
       <workItem from="1464972667607" duration="882000" />
-      <workItem from="1465003656353" duration="6247000" />
+      <workItem from="1465003656353" duration="6693000" />
     </task>
     <task id="LOCAL-00001" summary="Date类型.new Date();  Date.Parse(); Date.UTC();">
       <created>1464624382386</created>
@@ -482,11 +498,18 @@
       <option name="project" value="LOCAL" />
       <updated>1465011118841</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="    *   数据属性,该属性对象具有的属性有：configurable、enumerable、writable和value&#10;    *   访问器属性，该对象具有的属性有：configurable、enumerable、get和set">
+      <created>1465011629311</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1465011629311</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31418000" />
+    <option name="totallyTimeSpent" value="31864000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -539,7 +562,8 @@
     <MESSAGE value="修改路径" />
     <MESSAGE value="理解对象" />
     <MESSAGE value="使用Object.defineProperties()方法， 定义了两个数据属性（_year 和 edition）和 一个访问器属性(year)." />
-    <option name="LAST_COMMIT_MESSAGE" value="使用Object.defineProperties()方法， 定义了两个数据属性（_year 和 edition）和 一个访问器属性(year)." />
+    <MESSAGE value="    *   数据属性,该属性对象具有的属性有：configurable、enumerable、writable和value&#10;    *   访问器属性，该对象具有的属性有：configurable、enumerable、get和set" />
+    <option name="LAST_COMMIT_MESSAGE" value="    *   数据属性,该属性对象具有的属性有：configurable、enumerable、writable和value&#10;    *   访问器属性，该对象具有的属性有：configurable、enumerable、get和set" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="false" />
   </component>
   <component name="XDebuggerManager">
@@ -737,6 +761,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/第6章 面向对象的程序设计/6.2 创建对象/FactoryPatternExample01.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="25" />
           <folding />
         </state>
       </provider>
