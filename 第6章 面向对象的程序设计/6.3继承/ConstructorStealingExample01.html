@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>6.3.2 借用构造函数</title>
+</head>
+<body>
+<script>
+    function SuperType() {
+        this.colors = ["red", "blue", "green"];
+    }
+    function SubType() {
+        // 继承了SuperType
+        SuperType.call(this);
+    }
+    var instance1 = new SubType();
+    instance1.colors.push("black");
+    document.write(instance1.colors + "<br />");    //red,blue,green,black
+    alert(instance1.colors);                        //red,blue,green,black
+
+    var instance2 = new SubType();
+    document.write(instance2.colors + "<br />");    //red,blue,green
+    alert(instance2.colors);                          //red,blue,green
+
+</script>
+</body>
+</html>
