@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>6.3.2 - 1- 传递参数</title>
+</head>
+<body>
+<script>
+    function SuperType(name) {
+        this.name = name;
+    }
+    function SubType() {
+        //继承了SuperType，同时还传递了参数
+        SuperType.call(this, "Liu");
+
+        //实例属性
+        this.age = 26;
+    }
+    var instance = new SubType();
+    alert(instance.name);   //  Liu
+    alert(instance.age);    // 26
+</script>
+</body>
+</html>
