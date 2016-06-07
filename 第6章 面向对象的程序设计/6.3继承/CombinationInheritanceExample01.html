@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>6.3.3 组合继承</title>
+</head>
+<body>
+<script>
+    function SuperType(name) {
+        this.name = name;
+        this.colors = ["red", "blue", "green"];
+    }
+    SuperType.prototype.sayName = function () {
+        alert(this.name);
+    };
+
+    function SubType(name, age) {
+        SuperType.call(this, name);
+
+        this.age = age;
+    }
+
+    SubType.prototype.sayHi = function () {
+        alert("Hi");
+    };
+
+    var instance1 = new SubType("Liu", 26);
+    instance1.colors.push("Black");
+    document.write(instance1.name + "<br />");   //Liu
+    document.write(instance1.colors + "<br />");    //red,blue,green,Black
+    document.write(instance1.age + "<br />");    //26
+
+    var instance2 = new SubType("Nicholas", 29);
+    document.write(instance2.colors + "<br />");    //red,blue,green
+    document.write(instance2.name + "<br />");  //Nicholas
+    document.write(instance2.age + "<br />");   // 29
+
+
+</script>
+</body>
+</html>
