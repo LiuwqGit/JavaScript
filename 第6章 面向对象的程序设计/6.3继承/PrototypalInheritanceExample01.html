@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>6.3.4 原型式继承</title>
+</head>
+<body>
+<script>
+    function object(o) {
+        function F() {
+        }
+
+        F.prototype = o;
+        return new F();
+    }
+
+    Person = {
+        name: "Liu",
+        friends: ["Nicholas", "Michal", "Baby"]
+    };
+
+    var otherPerson = new object(Person);
+    otherPerson.name = "Wei";
+    otherPerson.friends.push("Qin");
+
+    var anotherPerson = new object(Person);
+    anotherPerson.name = "li";
+    anotherPerson.friends.push("Dan");
+
+    alert(Person.friends);              //Nicholas,Michal,Baby,Qin,Dan
+    document.write(Person.friends); //Nicholas,Michal,Baby,Qin,Dan
+
+</script>
+</body>
+</html>
