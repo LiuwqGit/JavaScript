@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>4 原型链的问题</title>
+</head>
+<body>
+<script>
+    function SuperType() {
+        this.colors = ["red", "blue", "green"];
+    }
+    function SubType() {
+    }
+    SubType.prototype = new SuperType();
+    var instance1 = new SubType();
+    instance1.colors.push("black");
+    document.write(instance1.colors + "<br />");
+    alert(instance1.colors);
+
+    var instance2 = new SubType();
+    document.write(instance2.colors + "<br />");
+    alert(instance2.colors);
+</script>
+</body>
+</html>
