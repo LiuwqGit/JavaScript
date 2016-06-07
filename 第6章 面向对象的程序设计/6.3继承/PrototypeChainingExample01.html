@@ -30,7 +30,16 @@
     alert(instance.property);   //  true
     alert(instance.subproperty);    //false
 
+    //    原型和实例之间的关系，检测实例属于那个原型。
+    //    第一种方式，使用instanceof操作符
+    //    第二种方式，使用isPrototypeOf()方法
+    alert(instance instanceof Object);      //true
+    alert(instance instanceof SuperType);   //true
+    alert(instance instanceof SubType);     //true
 
+    alert(Object.prototype.isPrototypeOf(instance));    //true
+    alert(SuperType.prototype.isPrototypeOf(instance)); //true
+    alert(SubType.prototype.isPrototypeOf(instance));   //true
 </script>
 </body>
 </html>
