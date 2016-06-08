@@ -7,29 +7,35 @@
 </head>
 <body>
 <script>
-    function object(o) {
+    /*
+     * 原型式继承。
+     * 将已有对象赋给新对象的原型，返回新对象。新对象的原型包含已有对象。
+     * 实例化对象，有一个指针指向原型对象
+     * */
+    function Object(o) {
         function F() {
         }
-
         F.prototype = o;
         return new F();
     }
 
-    Person = {
+    var person = {
         name: "Liu",
         friends: ["Nicholas", "Michal", "Baby"]
     };
 
-    var otherPerson = new object(Person);
+    var otherPerson = new Object(person);
     otherPerson.name = "Wei";
     otherPerson.friends.push("Qin");
 
-    var anotherPerson = new object(Person);
+    var anotherPerson = new Object(person);
     anotherPerson.name = "li";
     anotherPerson.friends.push("Dan");
 
-    alert(Person.friends);              //Nicholas,Michal,Baby,Qin,Dan
-    document.write(Person.friends); //Nicholas,Michal,Baby,Qin,Dan
+    alert(otherPerson.friends);                          // Nicholas,Michal,Baby,Qin,Dan
+    alert(person.friends);                                //Nicholas,Michal,Baby,Qin,Dan
+    document.write(person.friends + "<br />");           //Nicholas,Michal,Baby,Qin,Dan
+    document.write(anotherPerson.friends + "<br />");   //Nicholas,Michal,Baby,Qin,Dan
 
 </script>
 </body>
