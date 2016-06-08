@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>原型式继承</title>
+</head>
+<body>
+<script>
+    /*
+     *   原型式继承，让一个对象与另一个对象保持类似的情况。
+     *   包含引用类型值的属性始终都会共享相应的值，就像使用原型模式一样
+     * */
+    var person = {
+        name: "Nicholas",
+        friends: ["Shelby", "Court", "Van"]
+    };
+    var anotherPerson = Object.create(person, {
+        name: {
+            value: "Greg"
+        }
+    });
+    alert(anotherPerson.name);  //"Greg"
+</script>
+</body>
+</html>
