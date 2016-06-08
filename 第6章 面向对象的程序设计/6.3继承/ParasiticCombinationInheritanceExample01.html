@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>6.3.6 寄生组合式继承</title>
+</head>
+<body>
+<script>
+    function inheritPrototype(subType, superType) {
+        var prototype = Object(superType.prototype);  //创建对象
+        prototype.constructor = subType;            //增强对象
+        subType.prototype = prototype;              //指定对象
+    }
+    function SuperType(name) {
+        this.name = name;
+        this.colors = ["red", "blue", "green"];
+    }
+    SuperType.prototype.sayName = function () {
+        alert(this.name);
+    };
+    function SubType(name, age) {
+        SuperType.call(this, name);
+        this.age = age;
+    }
+    inheritPrototype(SubType, SuperType);
+    SubType.prototype.sayAge = function () {
+        alert(this.age);
+    };
+
+    var instance = new SubType("Liu", 26);
+    instance.colors.push("Black");
+    alert(instance.colors); //red,blue,green,Black
+    document.write(instance.colors);//red,blue,green,Black
+    alert(instance.age);//26
+    alert(instance.name);//Liu
+    alert(instance.sayAge());       //undefined   26
+
+
+</script>
+</body>
+</html>
