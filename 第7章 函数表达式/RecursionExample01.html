@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>7.1 递归</title>
+</head>
+<body>
+<script>
+    /*
+     *   递归阶乘函数
+     * */
+    function factorial(num) {
+        if (num <= 1) {
+            return 1;
+        } else {
+            return num * factorial(num - 1);
+        }
+    }
+</script>
+</body>
+</html>
