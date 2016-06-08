@@ -9,6 +9,7 @@
 <script>
     /*
      *   递归阶乘函数
+     *
      * */
     function factorial(num) {
         if (num <= 1) {
@@ -17,6 +18,12 @@
             return num * factorial(num - 1);
         }
     }
+
+    var anotherFactorial = factorial;
+    factorial = null;
+    alert(anotherFactorial(4)); //出错！Uncaught TypeError: factorial is not a function
+    //    解决方案见下一个页面
+
 </script>
 </body>
 </html>
