@@ -32,16 +32,16 @@
      *   递归调用照样能正确完成。
      *   这种方式在严格模式和非严格模式下都行得通。
      * */
-    var factorial2 = (function f(num) {
+    var factorial2 = function f(num) {
         if (num <= 1) {
             return 1;
         } else {
             return num * f(num - 1);
         }
-    });
-    var otherFacotrial = factorial2;
+    };
+    var otherFactorial = factorial2;
     factorial2 = null;
-    alert(otherFacotrial(5));   //120
+    alert(otherFactorial(5));   //120
 </script>
 </body>
 </html>
