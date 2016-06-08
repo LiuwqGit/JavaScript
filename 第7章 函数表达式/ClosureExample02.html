@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>7.2.1 闭包与变量</title>
+</head>
+<body>
+<script>
+    /*
+     *   返回各自不同的数值
+     *   在匿名函数中返回各自的
+     * */
+    function createFunctions() {
+        var result = new Array();
+        for (var i = 0; i < 10; i++) {
+            result[i] = function (num) {
+                return function () {
+                    return num;
+                };
+            }(i);
+        }
+        return result;
+    }
+</script>
+</body>
+</html>
