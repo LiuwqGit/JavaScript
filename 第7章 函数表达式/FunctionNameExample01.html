@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>函数表达式名称</title>
+</head>
+<body>
+<script>
+    /*
+     *   函数有个 非标准的name属性
+     *   通过此属性可以访问到给函数指定的名字。
+     *   这个属性值永远等于跟在function关键字后面的标识符。
+     * */
+    function functionName(arg0, arg1) {
+        alert(arg0 + arg1);
+    }
+    alert(functionName.name);   //functionName
+</script>
+</body>
+</html>
