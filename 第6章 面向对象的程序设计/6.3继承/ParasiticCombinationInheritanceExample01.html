@@ -7,6 +7,10 @@
 </head>
 <body>
 <script>
+    /*
+     *   寄生组合式继承，集寄生式继承和组合继承的优点与一身
+     *   是实现基于类型继承的最有效方式
+     */
     function inheritPrototype(subType, superType) {
         var prototype = Object(superType.prototype);  //创建对象
         prototype.constructor = subType;            //增强对象
