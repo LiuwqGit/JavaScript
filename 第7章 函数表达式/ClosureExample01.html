@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>7.2.1 闭包与变量</title>
+</head>
+<body>
+<script>
+    /*
+     *   闭包只能取得包含函数中任何变量的最后一个值。
+     *   此方法，每个函数内部i的值都是10.
+     * */
+    function createFunctions() {
+        var result = new Array();
+        for (var i = 0; i < 10; i++) {
+            result[i] = function () {
+                return i;
+            };
+        }
+        return result;
+    }
+</script>
+</body>
+</html>
