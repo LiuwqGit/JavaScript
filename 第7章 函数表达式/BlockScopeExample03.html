@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>7.3 模拟块级作用域</title>
+</head>
+<body>
+<script>
+    function outputNumbers(count) {
+        (function () {
+            for (var i = 0; i < count; i++) {
+                alert(i);
+            }
+        })();
+        alert(i);// 导致一个错误，找不到i
+    }
+    outputNumbers(5);//依次输出0-4
+</script>
+</body>
+</html>
