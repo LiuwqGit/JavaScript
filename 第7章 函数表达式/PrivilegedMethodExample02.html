@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>7.4 私有变量</title>
+</head>
+<body>
+<script>
+    (function () {
+        var name = "";
+        Person = function (value) {
+            name = value;
+        };
+
+        Person.prototype.getName = function () {
+            return name;
+        };
+        Person.prototype.setName = function (value) {
+            name = value;
+        };
+    })();
+
+    var person1 = new Person("Nicholas");
+    alert(person1.getName());   //Nicholas
+    person1.setName("Greg");
+    alert(person1.getName());   //Greg
+
+    var person2 = new Person("Liu");
+    alert(person1.getName());   //Liu
+    alert(person2.getName());   //Liu
+</script>
+</body>
+</html>
