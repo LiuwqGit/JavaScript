@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>7.4.3 增强的模块模式</title>
+</head>
+<body>
+<script>
+    var application = function () {
+        //私有变量和函数
+        var components = new Array();
+        //初始化
+        components.push(new BaseComponent());
+        //创建application的一个局部副本
+        var app = new BaseComponent();
+        //公共接口
+        app.getComponentCount = function () {
+            return components.length;
+        };
+
+        app.registerComponent = function (component) {
+            if (typeof component == "object") {
+                components.push(component);
+            }
+        };
+        //返回这个副本
+        return app;
+    }();
+</script>
+</body>
+</html>
