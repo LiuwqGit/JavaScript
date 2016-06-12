@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>7.3 模仿块级作用域</title>
+</head>
+<body>
+<script>
+    function outputNumbers(count) {
+        for (var i = 0; i < count; i++) {
+            alert(i);
+        }
+        alert(i);
+    }
+    outputNumbers(10);//输出0-10，共11次alert，最后一个是10.
+</script>
+</body>
+</html>
