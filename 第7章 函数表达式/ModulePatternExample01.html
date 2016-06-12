@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>7.4.2 模块模式</title>
+</head>
+<body>
+<script>
+    /*
+     *   模块模式（module pattern） 为单例创建私有变量和特权方法。
+     * */
+
+    var application = function () {
+        //私有变量和私有函数
+        var components = new Array();
+        //初始化
+        components.push(new BaseComponent());
+
+        //公共
+        return {
+            getComponentCount: function () {
+                return components.length;
+            },
+            registerComponent: function (component) {
+                if (typeof component == "object") {
+                    components.push(component);
+                }
+            }
+        };
+    }();
+</script>
+</body>
+</html>
