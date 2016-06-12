@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>this的作用域</title>
+</head>
+<body>
+<script>
+    var name = "This Window";
+
+    var object = {
+        name: "My Object",
+        getName: function () {
+            return this.name;
+        }
+    };
+    alert(object.getName());//"My Object"
+    alert((object.getName)());//"My Object"
+    /*
+     *   第三行代码先执行了一条赋值语句，然后再调用赋值后的结果。
+     *   因为这个赋值表达式的值是函数本身，所以this的值不能得到维持，
+     *   结果就返回了"This Window"。
+     * */
+    alert((object.getName = object.getName)());//"This Window"
+</script>
+</body>
+</html>
