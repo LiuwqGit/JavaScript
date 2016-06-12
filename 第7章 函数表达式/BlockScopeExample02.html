@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>7.3 模仿块级作用域</title>
+</head>
+<body>
+<script>
+    function outputNumbers(count) {
+        for (var i = 0; i < count; i++) {
+            alert(i);
+        }
+        var i;      //重新声明变量
+        alert(i);   //计数
+    }
+    outputNumbers(10);
+</script>
+</body>
+</html>
