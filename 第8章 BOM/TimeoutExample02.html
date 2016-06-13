@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>8.1.6 间歇调用和超时调用</title>
+</head>
+<body>
+<script>
+    //设置超时调用
+    var timeoutId = setTimeout(function () {
+        alert("Hello world!");
+    }, 1000);
+    //注意：把它取消
+    clearTimeout(timeoutId);
+</script>
+</body>
+</html>
