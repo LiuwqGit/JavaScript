@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>8.1.6 间歇调用和超时调用</title>
+</head>
+<body>
+<script>
+    /*
+     *   间歇调用setInterval() 使用方法和setTimeout()类似
+     *   间歇调用返回一个调用ID
+     * */
+    //不建议传递字符串！
+    setInterval("alert('Hello world!')", 10000);
+    //推荐的调用方式
+    setInterval(function () {
+        alert("Hello world!");
+    }, 10000);
+</script>
+</body>
+</html>
