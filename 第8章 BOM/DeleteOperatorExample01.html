@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>8.1.1 全局作用域</title>
+</head>
+<body>
+<script>
+    var age = 29;
+    window.color = "red";
+
+    delete window.color;    //true
+    delete window.age;      //false
+    alert(window.age);       //29
+    alert(window.color);     //undefined
+</script>
+</body>
+</html>
