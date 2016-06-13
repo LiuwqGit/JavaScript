@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>8.1.4 窗口大小</title>
+</head>
+<body>
+<script>
+    var pageWidth = window.innerWidth;
+    var pageHeight = window.innerHeight;
+
+    if (typeof pageWidth != "number") {
+        if (document.compatMode == "CSS1Compat") {
+            pageWidth = document.documentElement.clientWidth;
+            pageHeight = document.documentElement.clientHeight;
+        } else {
+            pageWidth = document.body.clientWidth;
+            pageHeight = document.body.clientHeight;
+        }
+    }
+    /*
+     *   使用　resizeTo()和resizeBy()方法可以调整浏览器窗口的大小。
+     *   接收两个参数，
+     *   resizeTo()接收浏览器窗口的新宽度和新高度。
+     *   resizeBy()接收新窗口与原窗口的宽度和高度之差。
+     *   可能被浏览器禁用。
+     * */
+    //调整到100*100
+    window.resizeTo(100, 100);
+    //调整到200*150
+    window.resizeBy(100, 50);
+    //调整到300*300
+    window.resizeTo(300, 300);
+</script>
+</body>
+</html>
