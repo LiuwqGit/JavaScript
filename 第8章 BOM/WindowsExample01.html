@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>弹出窗口</title>
+</head>
+<body>
+<h1>这是h1标题</h1>
+<p>这是段落开头</p>
+简单的内容
+<script>
+    alert("这是alert()弹出框");
+    if (confirm("Are you sure？")) {
+        alert("sure! go!");
+    } else {
+        alert("Let'e think!");
+    }
+
+    var result = prompt("What is your name?", "");
+    if (result !== null) {
+        alert("Welcome, " + result);
+    }
+    //显示“打印”对话框
+    window.print();
+    //显示“查找”对话框
+    //这个功能，只在火狐有用，其他浏览器都解析不了。
+    window.find();
+</script>
+</body>
+</html>
