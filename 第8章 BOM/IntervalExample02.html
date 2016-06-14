@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>间歇调用</title>
+</head>
+<body>
+<script>
+    /*
+     *   间歇调用：每间隔一定时间执行函数
+     *
+     * */
+    var num = 0;
+    var max = 10;
+    var intervalId = null;
+
+    function incrementNumber() {
+        num++;
+        if (num == max) {
+            clearInterval(intervalId);
+            alert("Done");
+        }
+    }
+
+    intervalId = setInterval(incrementNumber, 500);
+</script>
+</body>
+</html>
