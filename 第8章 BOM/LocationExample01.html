@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>8.2.1 查询字符串参数</title>
+</head>
+<body>
+<script>
+    function getQueryStringArgs() {
+        //获取url中，查询字符串,并去掉开头的问号
+        var qs = location.search.length > 0 ? location.search.substr(1) : "";
+        args = qs.length ? qs.split('&') : [];
+        var i = 0;
+        var len = args.length;
+
+        //逐个将每一项添加到args对象中
+        for (; i < len; i++) {
+            var item = args[i].split('=');
+            var name = decodeURIComponent(item[0]);
+            var value = decodeURIComponent(item[1]);
+            if (name.length) {
+                args[name] = value;
+            }
+        }
+        return args;
+    }
+</script>
+</body>
+</html>
