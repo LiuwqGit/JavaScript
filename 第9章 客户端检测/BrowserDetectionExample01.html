@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>浏览器 呈现引擎检测</title>
+</head>
+<body>
+<script>
+    var client = function () {
+        var engine = {
+            //呈现引擎
+            ie: 0,
+            gecko: 0,
+            webkit: 0,
+            khtml: 0,
+            opera: 0,
+            //具体的版本号
+            ver: null
+        };
+        //在此检测呈现引擎、平台和设备
+        return {
+            engine: engine
+        };
+    }();
+
+    /*
+     *   识别浏览器呈现引擎
+     *   1:检测opera
+     *   2:检测WebKit
+     *   3:检测KHTML
+     *   4:Gecko
+     *   5:IE
+     * */
+    var ua = navigator.userAgent;
+    if (window.opera) {
+        engine.ver = window.opera.version();
+        engine.opera = parseFloat(engine.ver);
+    } else if (/AppleWebKit\/(\S+)/.test(ua)) {
+        engine.ver = RegExp["$1"];
+        engine.webkit = parseFloat(engine.ver);
+    } else if (/KHTML\/(\S+)/.test(ua) || /Konqueror\/([^;]+)/.test(ua)) {
+        engine.ver = RegExp["$1"];
+        engine.khtml = parseFloat(engine.ver);
+    } else if (/rv:([^\)]+)\) Gecko\/\d{8}/.test(ua)) {
+        engine.ver = RegExp["$1"];
+        engine.gecko = parseFloat(engine.ver);
+    } else if (/MSIE ([^;]+)/.test(ua)) {
+        engine.ver = RegExp["$1"];
+        engine.ie = parseFloat(engine.ver);
+    }
+</script>
+</body>
+</html>
