@@ -35,13 +35,25 @@
         var system = {
             win: false,
             mac: false,
-            xll: false
+            xll: false,
+
+            //移动设备
+            iphone: false,
+            ipod: false,
+            ipad: false,
+            ios: false,
+            android: false,
+            nokiaN: false,
+            winMobile: false
         };
 
         var p = navigator.platform;
         system.win = p.indexOf("Win") == 0;
         system.mac = p.indexOf("Mac") == 0;
         system.xll = (p.indexOf("xll") == 0) || (p.indexOf("Linux") == 0);
+        system.iphone = ua.indexOf("iPhone") > -1;
+        system.ipod = ua.indexOf("iPod") > -1;
+        system.ipad = ua.indexOf("iPad") > -1;
 
         //在此检测呈现引擎、平台和设备
         return {
