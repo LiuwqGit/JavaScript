@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Windows 检测</title>
+</head>
+<body>
+<script>
+    if (system.win) {
+        if (/Win(?:dows )?([^do]{2})\S?(\d+\.\d+)?/.test(ua)) {
+            if (RegExp["$1"] == "NT") {
+                switch (RegExp["$2"]) {
+                    case "5.0":
+                        system.win = "2000";
+                        break;
+                    case "5.1":
+                        system.win = "XP";
+                        break;
+                    case "6.0":
+                        system.win = "Vista";
+                        break;
+                    case "6.1":
+                        system.win = "7";
+                        break;
+                    default:
+                        system.win = "NT";
+                        break;
+                }
+            } else if (RegExp["$1"] == "9x") {
+                system.win = "ME";
+            } else {
+                system.win = RegExp["$1"];
+            }
+        }
+
+        if (client.system.win) {
+            if (client.system.win == "XP") {
+                //说明是XP
+            } else if (client.system.win == "Vista") {
+                //说明是Vista
+            }
+        }
+    }
+</script>
+</body>
+</html>

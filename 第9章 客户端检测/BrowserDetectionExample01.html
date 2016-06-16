@@ -38,6 +38,11 @@
             xll: false
         };
 
+        var p = navigator.platform;
+        system.win = p.indexOf("Win") == 0;
+        system.mac = p.indexOf("Mac") == 0;
+        system.xll = (p.indexOf("xll") == 0) || (p.indexOf("Linux") == 0);
+
         //在此检测呈现引擎、平台和设备
         return {
             engine: engine,
@@ -115,6 +120,7 @@
             //执行针对其他Gecko 浏览器的代码
         }
     }
+
 </script>
 </body>
 </html>
