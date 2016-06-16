@@ -32,10 +32,17 @@
             ver: null
         };
 
+        var system = {
+            win: false,
+            mac: false,
+            xll: false
+        };
+
         //在此检测呈现引擎、平台和设备
         return {
             engine: engine,
-            browser: browser
+            browser: browser,
+            system: system
         };
     }();
 
