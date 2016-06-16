@@ -44,7 +44,11 @@
             ios: false,
             android: false,
             nokiaN: false,
-            winMobile: false
+            winMobile: false,
+
+            //游戏系统
+            wii: false,
+            ps: false
         };
 
         var p = navigator.platform;
@@ -54,6 +58,8 @@
         system.iphone = ua.indexOf("iPhone") > -1;
         system.ipod = ua.indexOf("iPod") > -1;
         system.ipad = ua.indexOf("iPad") > -1;
+        system.wii = ua.indexOf("Wii") > -1;
+        system.ps = /playstation/i.test(ua);
 
         //在此检测呈现引擎、平台和设备
         return {
