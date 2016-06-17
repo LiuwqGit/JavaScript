@@ -8,6 +8,10 @@
 <body>
 <div id="myDiv" align="left" data_my_special_attribute="hello!"></div>
 <script>
+    /*
+     *   一般使用对象的属性，来获取值，div.id
+     *   只有在自定义特性值的时候，才使用div.getAttribute("data_my_special_attribute")
+     * */
     var div = document.getElementById("myDiv");
     alert(div.id);                                              //  myDiv
     alert(div.data_myspecial_attribute);                        //  undefined
