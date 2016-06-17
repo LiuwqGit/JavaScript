@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Title</title>
+</head>
+<body>
+<div id="myDiv" class="bd" title="Body text" lang="en" dir="ltr"></div>
+<script>
+    /*
+     *   获取属性值
+     * */
+    var div = document.getElementById("myDiv");
+    alert(div.id);              //myDiv
+    alert(div.className);       //bd
+    alert(div.title);           //Body text
+    alert(div.lang);            //en
+    alert(div.dir);             // ltr
+
+    /*
+     *   设置属性值
+     * */
+    div.id = "someOtherId";
+    div.className = "ft";
+    div.title = "Some other text";
+    div.lang = "fr";
+    div.dir = "rtl";
+
+</script>
+</body>
+</html>
