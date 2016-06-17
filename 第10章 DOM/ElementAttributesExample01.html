@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>设置属性值</title>
+</head>
+<body>
+<div id="myDiv" align="left" data_my_special_attribute="hello!"></div>
+<script>
+    /*
+     *   setAttribute()，接收两个参数：要设置的特性名和值
+     *   如果特性已经存在，setAttribute()会以指定的值替换现有的值；
+     *   如果不存在，setAttribute()则创建该属性并设置相应的值。
+     * */
+    var div = document.getElementById("myDiv");
+    div.setAttribute("id", "someOtherId");
+    div.setAttribute("class", "ft");
+    div.setAttribute("title", "some Other text");
+    div.setAttribute("lang", "fr");
+    div.setAttribute("dir", "rtl");
+
+
+</script>
+</body>
+</html>
