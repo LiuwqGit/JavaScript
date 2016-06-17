@@ -9,9 +9,10 @@
 <div id="myDiv" align="left" data_my_special_attribute="hello!"></div>
 <script>
     var div = document.getElementById("myDiv");
-    alert(div.id);
-    alert(div.data_myspecial_attribute);
-    alert(div.align);
+    alert(div.id);                                              //  myDiv
+    alert(div.data_myspecial_attribute);                        //  undefined
+    alert(div.align);                                           //  left
+    alert(div.getAttribute("data_my_special_attribute"));   //  hello!
 </script>
 </body>
 </html>
