@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Title</title>
+</head>
+<body>
+
+<p id="p1" style="align-content: space-around">这是一个段落</p>
+
+<script>
+    function outputAttributes(element) {
+        var pairs = new Array();
+        var attrName;
+        var attrValue;
+        var i;
+        var len;
+
+        for (i = 0, len = element.attributes.length; i < len; i++) {
+            attrName = element.attributes[i].nodeName;
+            attrValue = element.attributes[i].nodeValue;
+            pairs.push(attrName + "=\"" + attrValue + "\"");
+        }
+        return pairs.join(" ");
+    }
+    var num = outputAttributes(p1);
+    alert(num);
+</script>
+</body>
+</html>
