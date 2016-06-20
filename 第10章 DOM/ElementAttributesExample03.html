@@ -20,7 +20,10 @@
         for (i = 0, len = element.attributes.length; i < len; i++) {
             attrName = element.attributes[i].nodeName;
             attrValue = element.attributes[i].nodeValue;
-            pairs.push(attrName + "=\"" + attrValue + "\"");
+            //确保IE7之前的版本，也可以返回指定的特性
+            if (element.attributes[i].specified) {
+                pairs.push(attrName + "=\"" + attrValue + "\"");
+            }
         }
         return pairs.join(" ");
     }
