@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CreateElementExample01</title>
+</head>
+<body>
+<div>这是一个空div</div>
+<script>
+    var div = document.createElement("div");
+    div.id = "MyNewDiv";
+    div.className = "box";
+    document.body.appendChild(div);
+
+    /*
+     * 这种模式针对IE8以下，才起作用。
+     * */
+    var div1 = document.createElement("<div id=\"createDiv\" class=\"next1\">这是div1</div>");
+    document.body.appendChild(div1);
+</script>
+</body>
+</html>
