@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Text类型</title>
+</head>
+<body>
+<div id="test">
+    Hello world!
+    <input id="inputtext" placeholder="占位符">
+</div>
+
+<script>
+    var textNode = test.firstChild;
+    alert(textNode.nodeValue);
+    test.firstChild.nodeValue = "Some other message";
+    alert(textNode.nodeValue);
+</script>
+</body>
+</html>
