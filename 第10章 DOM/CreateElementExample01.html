@@ -5,13 +5,25 @@
     <title>CreateElementExample01</title>
 </head>
 <body>
-<div>这是一个空div</div>
+<div>
+    这是一个div
+    <ul id="MyList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+</div>
 <script>
     var div = document.createElement("div");
     div.id = "MyNewDiv";
     div.className = "box";
     document.body.appendChild(div);
 
+    var uu = document.getElementById("MyList");
+    var num = uu.childNodes.length; // ie8之前都是返回3个元素。ie9之后和其他浏览器返回7个元素。
+    uu.childNodes[0].nodeType == 3;// EmptyTextNode
+    uu.childNodes[1].nodeType == 1;// <li>Item 1</li>
 
     var client = function () {
         var engine = {
@@ -202,10 +214,11 @@
         //创建input元素
         var input = document.createElement("<input type='checkbox' />");
         //创建button元素
-        var button = document.createElement("<button type='reset'></button>")
+        var button = document.createElement("<button type='reset' ></button>")
         //创建单选按钮
         var radio1 = document.createElement("<input type='radio' name='choice' value='1' />")
         var radio2 = document.createElement("<input type='radio' name='choice' value='2' />")
+        document.body.appendChild(button);
         document.body.appendChild(radio1);
         document.body.appendChild(radio2);
     }
