@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>分隔文本节点</title>
+</head>
+<div>
+    我要分隔你！
+</div>
+<body>
+<script>
+    var element = document.createElement("div");
+    element.className = "message";
+
+    var textNode = document.createTextNode("Hello world!");
+    element.appendChild(textNode);
+    document.body.appendChild(element);
+
+    var newNode = element.firstChild.splitText(4);
+    alert(element.firstChild.nodeValue);//Hell
+    alert(newNode.nodeValue);//o world!
+    alert(element.childNodes.length);//2
+
+</script>
+</body>
+</html>
