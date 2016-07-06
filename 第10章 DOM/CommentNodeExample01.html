@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Comment类型</title>
+</head>
+<body>
+<div id="myDiv">
+    <!-- A comment-->
+</div>
+<script>
+    var div = document.getElementById("myDiv");
+    var coment = div.firstChild;
+    alert(coment.nodeValue);
+    alert(coment.data);
+    var aaa = document.createComment("A A A Comment");
+    div.appendChild(aaa);
+    document.appendChild(aaa);
+    /*
+     *   可以使用document.createComment();添加注释内容
+     *   div.appendChild(aaa);在div节点内容后面添加 注释内容
+     *   document.appendChild(aaa); 在整个文档后面添加 注释内容
+     *   如果document.appendChild(aaa);执行，那么div.appendChild(aaa);功能无效
+     * */
+</script>
+</body>
+</html>
