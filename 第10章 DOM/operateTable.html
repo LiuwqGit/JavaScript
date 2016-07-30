@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>操作表格</title>
+</head>
+<body>
+<table border="1" width="100%">
+    <tbody>
+    <tr>
+        <td>cell 1,1</td>
+        <td>cell 2,1</td>
+    </tr>
+    <tr>
+        <td>cell 1,2</td>
+        <td>cell 2,2</td>
+    </tr>
+    </tbody>
+</table>
+<script type="text/javascript">
+    var table = document.createElement("table");
+    table.border = "1";
+    table.width = "100%";
+    document.body.appendChild(table);
+
+    var tbody = document.createElement("tbody");
+    table.body.appendChild(tbody);
+    //创建第一行
+    var tr = document.createElement("tr");
+    var td = document.createElement("td");
+    td.appendChild(document.createTextNode("cell2 1,1"));
+    tr.body.appendChild(td);
+    td.appendChild(document.createTextNode("cell2 2,1"));
+    tr.body.appendChild(td);
+    tbody.appendChild(tr);
+    //创建第二行
+    var tr2 = document.createElement("tr");
+    var td2 = document.createElement("td");
+    td2.appendChild(document.createTextNode("cell2 1,2"));
+    tr2.body.appendChild(td2);
+    td2.appendChild(document.createTextNode("cell2 2,2"));
+    tr2.body.appendChild(td2);
+    tbody.appendChild(tr2);
+    //将表格添加到文档主体中
+    document.body.appendChild(table);
+</script>
+</body>
+</html>
