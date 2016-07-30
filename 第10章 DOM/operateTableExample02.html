@@ -5,7 +5,7 @@
     <title>创建表格，利用属性</title>
 </head>
 <body>
-<table border="1" width="100%">
+<!--<table border="1" width="100%">
     <tbody>
     <tr>
         <td>cell 1,1</td>
@@ -16,10 +16,12 @@
         <td>cell 2,2</td>
     </tr>
     </tbody>
-</table>
+</table>-->
 <script type="text/javascript">
     function createTable() {
         var table = document.createElement("table");
+        table.border = "1";
+        table.width = "100%";
         document.body.appendChild(table);
         var tbody = document.createElement("tbody");
         table.appendChild(tbody);
@@ -30,16 +32,18 @@
         tbody.rows[0].insertCell(0);
         tbody.rows[0].cells[0].appendChild(document.createTextNode("cell 1,1"));
         tbody.rows[0].insertCell(1);
-        tbody.rows[0].cells[1].appendChild(document.createElement("cell 1,2"));
+        tbody.rows[0].cells[1].appendChild(document.createTextNode("cell 1,2"));
         //    创建第二行
         tbody.insertRow(1);
         tbody.rows[1].insertCell(0);
-        tbody.rows[1].appendChild(document.createTextNode("cell 2,1"));
+        tbody.rows[1].cells[0].appendChild(document.createTextNode("cell 2,1"));
         tbody.rows[1].insertCell(1);
-        tbody.rows[1].appendChild(document.createTextNode("cell 2,2"));
+        tbody.rows[1].cells[1].appendChild(document.createTextNode("cell 2,2"));
         //  将表格添加到文档主体中
         document.body.appendChild(table);
     }
+    document.write("123");
+    document.write(createTable());
 </script>
 </body>
 </html>
