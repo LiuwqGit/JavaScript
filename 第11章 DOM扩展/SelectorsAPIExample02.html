@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>querySelectorAll()方法</title>
+</head>
+<body>
+<em>首个元素这是em元素A</em>
+<em class="selected">首个元素这是em元素B</em>
+<div>
+    <div class="selected">这是第一个div,
+        这里也有strong元素，比如<strong>我是strong元素节点内容</strong></div>
+    <em>这是em元素1</em>
+    <em class="selected">这是em元素2</em>
+    <p>
+        我是一个段落，其中<strong>我</strong>要突出显示。
+        还有，段落主题<strong>获取css选择符strong</strong>.
+        使用方法<strong>querySelectedAll()</strong>
+
+    </p>
+</div>
+<script type="text/javascript">
+    //querySelectorAll()方法，接收参数是一个css选择符，
+    //返回所有匹配的元素。返回的是一个带有所有属性和方法的NodeList的实例
+    //只要传给方法的CSS选择符有效，该方法都会返回一个NodeList对象。
+    //不管找到多少匹配的元素。如果没有找到匹配的元素，NodeList就是空的。
+
+    //取得<div>中，包含<em>的所有元素
+    var em = document.querySelector('div').querySelectorAll('em');
+    //取得类为".selected'的所有元素
+    var selected = document.querySelectorAll('.selected')
+    //取得所有<p>中是所有<strong>元素
+    var strong = document.querySelector('p').querySelectorAll('strong');
+</script>
+</body>
+</html>
