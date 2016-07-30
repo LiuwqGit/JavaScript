@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动态加载js内容</title>
+</head>
+<body>
+<script type="text/javascript">
+    function sayHi() {
+        alert("hi");
+    }
+    var code = "function sayHi() { alert ('hi'); }";
+    function loadScript(code) {
+        var script = document.createElement("script");
+        script.type = "type/javascript";
+        try {
+            script.appendChild(document.createTextNode(code));
+        } catch (Exception) {
+            script.text = code;
+        }
+    }
+    loadScript("function sayHi() { alert ('hi'); }");
+</script>
+
+</body>
+</html>
