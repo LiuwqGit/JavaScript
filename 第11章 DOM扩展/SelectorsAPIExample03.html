@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>matchesSelector()方法</title>
+</head>
+<body>
+<div>是我，就是我，匹配吗？</div>
+<script type="text/javascript">
+    function matchesSelector1(element, selector) {
+        if (element.matchesSelector) {
+            return element.matchesSelector(selector);
+        }
+    }
+    if (matchesSelector1(document.body, "div")) {
+        //执行操作
+        alert('true');
+    } else {
+        alert('false')
+    }
+</script>
+</body>
+</html>
