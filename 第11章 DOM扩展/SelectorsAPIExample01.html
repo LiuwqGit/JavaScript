@@ -6,7 +6,10 @@
 </head>
 <body>
 <script type="text/javascript">
-
+    /*
+     *   querySelector()方法接收一个css选择符，返回与该模式匹配的第一个元素,
+     *   如果没有找到匹配的元素，返回null
+     * */
     <!--取ID为'myDiv'的元素-->
     var a = document.querySelector("#myDiv");
     // 取得body元素
@@ -14,7 +17,7 @@
     //取得类为'selected'的第一个元素
     var classElement = document.querySelector('.selected');
     //取得类为'button'的第一个图像元素
-    var img = document.querySelector('img.button');
+    var img = document.body.querySelector('img.button');
 
 </script>
 </body>
