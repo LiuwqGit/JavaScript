@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>outterHTML</title>
+</head>
+<body>
+<!--//outterHTML 包含该节点。-->
+<div>
+    <p> This is a <strong>paragraph</strong> with a list following it.</p>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <script type="text/javascript">
+        var div = document.querySelector('div');
+        var pe = "<p>This is a paragraph</p>"
+        div.outterHTML = pe;
+
+        var p = document.createElement("p");
+        p.appendChild(document.createTextNode("This is a paragraph."));
+        div.appendChild.replaceChild(p, div);
+
+    </script>
+</div>
+</body>
+</html>
