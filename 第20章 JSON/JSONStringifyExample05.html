@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>toJSON</title>
+</head>
+<body>
+<script>
+    var book = {
+        "title": "professional Javascript",
+        "authors": [
+            "Nicholas C. Zakas"
+        ],
+        edition: 3,
+        year: 2011,
+        toJSON: function () {
+            return this.title;
+        }
+    };
+    var jsonText = JSON.stringify(book);
+    document.write(jsonText);// "professional Javascript"
+</script>
+</body>
+</html>
