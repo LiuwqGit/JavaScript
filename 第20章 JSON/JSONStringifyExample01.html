@@ -16,8 +16,24 @@
         edition: 3,
         year: 2011
     };
-    var jsonText = JSON.stringify(book, ["title", "edition"]);
+
+    var jsonText = JSON.stringify(book);
+    var jsonTextArray = JSON.stringify(book, ["title", "edition"]);
+    var jsonTextFun = JSON.stringify(book, function (key, value) {
+        switch (key) {
+            case "authors":
+                return value.join(".");
+            case "edition":
+                return undefined;
+            case "year":
+                return 2016;
+            default:
+                return value;
+        }
+    });
     document.write(jsonText);
+    document.write(jsonTextArray);
+    document.write(jsonTextFun);
 </script>
 </body>
 </html>
