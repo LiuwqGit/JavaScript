@@ -31,6 +31,13 @@
                 return value;
         }
     });
+    /**
+     *  JSON.stringify()方法的第三个参数用于控制结果中的缩进和空白符。
+     *  如果这个参数是数值，那它表示的是每个级别缩进的空格数。
+     *  如果这个参数是字符串,则这个字符串将在JSON字符串中被用作缩进字符(不再使用空格).
+     */
+    var jsonText4 = JSON.stringify(book, null, 4);
+    document.write(jsonText4);
     document.write(jsonText);
     document.write(jsonTextArray);
     document.write(jsonTextFun);
