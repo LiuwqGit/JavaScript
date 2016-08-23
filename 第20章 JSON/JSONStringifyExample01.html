@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>json</title>
+</head>
+<body>
+<script>
+
+    var book = {
+        "title": "Professional JavaScript",
+        "authors": [
+            "Nicholas C. Zakas"
+        ],
+        edition: 3,
+        year: 2011
+    };
+
+    var jsonText = JSON.stringify(book);
+    var jsonTextArray = JSON.stringify(book, ["title", "edition"]);
+    var jsonTextFun = JSON.stringify(book, function (key, value) {
+        switch (key) {
+            case "authors":
+                return value.join(".");
+            case "edition":
+                return undefined;
+            case "year":
+                return 2016;
+            default:
+                return value;
+        }
+    });
+    /**
+     *  JSON.stringify()方法的第三个参数用于控制结果中的缩进和空白符。
+     *  如果这个参数是数值，那它表示的是每个级别缩进的空格数。
+     *  如果这个参数是字符串,则这个字符串将在JSON字符串中被用作缩进字符(不再使用空格).
+     */
+    var jsonText4 = JSON.stringify(book, null, 4);
+    document.write(jsonText4);
+    document.write(jsonText);
+    document.write(jsonTextArray);
+    document.write(jsonTextFun);
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>JSON.parse</title>
+</head>
+<body>
+<script>
+    var book = {
+        "title": "Professional JavaScript",
+        "authors": [
+            "Nicholas C. Zakas"
+        ],
+        edition: 3,
+        year: 2011,
+        releaseDate: new Date(2011, 11, 1)
+    };
+    var jsonText = JSON.stringify(book);
+    var bookCopy = JSON.parse(jsonText, function (key, value) {
+        if (key == "releaseDate") {
+            return new Date(value);
+        } else {
+            return value;
+        }
+    });
+    //    var bookCopy = JSON.parse(jsonText);
+    alert(bookCopy.releaseDate.getFullYear());
+    alert(bookCopy.releaseDate);
+</script>
+</body>
+</html>

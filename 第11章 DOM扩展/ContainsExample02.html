@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Contains</title>
+</head>
+<body>
+<script type="text/javascript">
+    /*
+     *  使用三个方法，确定一个节点是否为另一个节点的后代
+     *  第一个判断条件 使用contains方法  【在webkit版本号小于522的safari浏览器中，contains()方法不能正常使用】
+     *  第二个判断条件，使用compareDocumentPosition
+     *  第三个循环找到父节点，当找到相同的返回true
+     *
+     * */
+    function contains(refNode, otherNode) {
+        if (typeof refNode.contains == "function" && (!client.engine.webkit || client.engine.webkit >= 522)) {
+            return refNode.contains(otherNode);
+        } else if (typeof refNode.compareDocumentPosition == "function") {
+            return !!(refNode.compareDocumentPosition(otherNode) & 16);
+        } else {
+            var node = other.parentNode;
+            do {
+                if (refNode == node) {
+                    return true;
+                } else {
+                    node == node.parentNode;
+                }
+            } while (node !== null)
+        }
+        return false;
+    }
+</script>
+</body>
+</html>
