@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML事件处理程序</title>
+</head>
+<body>
+<input type="button" value="event按钮-event.type" onClick="alert(event.type)"/>
+<input type="button" value="我是按钮 this.value" onClick="alert(this.value)"/>
+<input type="button" value="我是按钮 this.type" onClick="alert(this.type)"/>
+<form>
+    <input type="text" name="username" value="">
+    <input type="button" value="我是表单扩展按钮" onClick="alert(username.value)"/>
+</form>
+
+<!--
+扩展作用域方法：
+function () {
+    with(document) {
+        with(this) {
+            //元素属性值
+        }
+    }
+}
+如果当前元素为表单输入元素，则作用域中还会包含访问表单元素（父元素）的入口
+function () {
+    with(document) {
+        with(this.form) {
+            with(this) {
+                //元素属性值
+            }
+        }
+    }
+}
+-->
+</body>
+</html>
