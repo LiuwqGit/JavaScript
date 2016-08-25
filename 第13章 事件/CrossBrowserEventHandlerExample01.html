@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>调用外部的js来处理事件</title>
+	<style type="text/css">
+	.input {
+		font-size: 20px;
+		width: 150px;
+		height: 50px;
+		margin: 100px auto;
+	}
+	</style>
+</head>
+<body>
+	<input type="button" class="input" id="btn" value="按钮" />
+	<script type="text/javascript" src="EventUtil.js"></script>
+	<script type="text/javascript">
+		var btn = document.getElementById('btn');
+		var handler = function () {
+			alert("Time is now " + Date.now());
+		}
+		EventUtil.addHandler(btn, "click", handler);
+	</script>
+</body>
+</html>
