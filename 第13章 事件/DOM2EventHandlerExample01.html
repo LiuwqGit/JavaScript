@@ -2,21 +2,47 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>DOMLevel2浜嬩欢澶勭悊绋嬪簭
+	<title>DOMLevel2事件处理程序
 	</title>
 </head>
 <body>
 	<div>
-		<input type="button" id="btn" value="DOM2鎸夐挳" class="input" />
+		<input type="button" id="btn" value="DOM2按钮" class="input" />
 	</div>
 	<script type="text/javascript">
+		var handlerFun = function () {
+			alert(this.id);
+		};
+		var HelloFun = function () {
+			alert("Hello javascript");
+		};
+		/*
+			addEventListener() 添加事件处理程序
+			removeEventListener() 移除事件处理程序;
+			"DOM2级事件"定义了以上两个方法，他们都是接受3个参数：要处理的事件名、作为事件处理程序的函数和一个布尔值。最后这个布尔值参数如果是true,表示在捕获阶段调用事件处理程序；
+			如果是false，表示在冒泡阶段调用事件处理程序。
+		 */
 		var btn = document.getElementById('btn');
 		btn.addEventListener("click", function () {
 			alert(this.id);
-		});
+		}, false);
+		btn.removeEventListener("click", function () {
+			alert(this.id);
+		}, false);
 		btn.addEventListener("click", function () {
 			alert("Hello World!");
-		});
+		}, false);
+		btn.removeEventListener("click", function () {
+			alert("Hello World!");
+		}, false);
+		/*
+			下面两个才能配对，一个添加，一个取消。
+			传入两个方法中的事件，必须完全一样。
+		 */
+		btn.addEventListener("click", handlerFun, false);
+		btn.removeEventListener("click", handlerFun, false);
+		btn.addEventListener("click", HelloFun, false);
+		btn.removeEventListener("click", HelloFun, false);
 	</script>
 </body>
 </html>
