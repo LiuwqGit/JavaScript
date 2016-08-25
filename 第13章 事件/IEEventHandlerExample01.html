@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>IE事件处理机制</title>
+	<style type="text/css">
+	.input{
+		font-size: 20px;
+		width: 150px;
+		height: 50px;
+	}
+	</style>
+</head>
+<body>
+	<input type="button" class="input" id="myBtn" value="按钮" />
+	<script type="text/javascript">
+	/*
+		以下方法，只针对IE浏览器.
+		attachEvent(); 
+		detachEvent();
+	 */
+		var btn = document.getElementById('myBtn');
+		var handler = function () {
+			alert("Hello javascript");
+		};
+		btn.attachEvent("onclick", function () {
+			alert("Hello World!");
+		});
+		btn.attachEvent("onclick", function () {
+			alert("Hello IE!");
+		});
+		btn.detachEvent("onclick", function () {
+			alert("Hello IE!");
+		});//无效
+		btn.attachEvent("onclick", handler);
+		btn.detachEvent("onclick", handler);//有效
+		</script>
+</body>
+</html>
