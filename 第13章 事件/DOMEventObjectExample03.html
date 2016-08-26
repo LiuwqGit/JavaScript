@@ -8,7 +8,11 @@
 			font-size: 20px;
 			width: 150px;
 			height: 100px;
-			border: 2px solid red;
+			border: 2px solid green;
+		}
+		div{
+			border: 2px solid green;
+			font-size: 20px;
 		}
 	</style>
 </head>
@@ -33,11 +37,8 @@
 		};
 		 
 		btn.onclick = handler;
-		div.onmouseover = function (event) {
-			// event.currentTarget.style.backgroundcolor = "red";
-			// alert("alertaaa")	;
-			this.style.font-size = "18px";
-		};
+// 以下两个没有效果
+		btn.onmouseover = handler;
 		btn.onmouseout = handler;
 	</script>
 </body>
