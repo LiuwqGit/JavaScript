@@ -7,7 +7,7 @@
 <body>
 	<div id="div1" > <a id="myLink"  href="DOMEventObjectExample01.html" cancelable="true">DOM事件对象例子1</a></div>
 	<script type="text/javascript">
-	// 取消默认行为第一步：将cancelable属性设置为true的事件，才能使用preventDefault()来取消默认行为
+	// 取消默认行为：将cancelable属性设置为true的事件，才能使用preventDefault()来取消默认行为
 		var link = document.getElementById('myLink');
 		link.onclick = function (event) {
 			event.preventDefault();

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DOM事件对象stopPropagation方法</title>
+	<style type="text/css">
+	body div {
+		border: 1px solid red;
+		margin: 10px ;
+	}
+	</style>
+</head>
+<body>
+	<div>
+		<input type="button" class="input" id="btn" value="按钮">
+	</div>
+	<script type="text/javascript">
+	//stopPropagation()方法用于立即停止事件在DOM层次中的传播，即取消进一步的事件捕获或冒泡。
+		var btn = document.getElementById('btn');
+		btn.onclick = function (event) {
+			alert("Hi, button");
+			event.stopPropagation();
+		};
+		document.body.onclick = function () {
+			alert("Hi, body!");
+		};
+	</script>
+</body>
+</html>
