@@ -10,6 +10,9 @@
 		var btn = document.getElementById('myBtn');
 		btn.onclick = function (event) {
 			alert(event.eventPhase + "btn点击事件"); //2btn点击事件
+			alert(event.target === this);
+			alert(event.currentTarget === this);
+			alert(event.target === event.currentTarget);
 		};
 		document.body.addEventListener("click", function (event) {
 			alert(event.eventPhase + "添加事件"); //1添加事件
@@ -18,6 +21,7 @@
 			alert(event.eventPhase + "body点击事件"); //3body点击事件
 		};
 		//最后的弹出框顺序是：1》2》3
+		//处于  "目标对象" 上的时候，eventPhase值为2，this/currentTarget/target三者始终相等
 	</script>
 </body>
 </html>
