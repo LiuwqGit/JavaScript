@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.input {
+			font-size: 20px;
+			width: 150px;
+			height: 100px;
+			border: 2px solid red;
+		}
+	</style>
+</head>
+<body>
+	<input type="button" class="input" id="myBtn" value="按钮" />
+	<div class="div" id="div1"  >鼠标移动效果</div>
+	<script type="text/javascript">
+		var btn = document.getElementById("myBtn");
+		var div = document.getElementById('div1');
+		var handler = function (event) {
+			switch(event.type){
+				case "click":
+					alert("clicked");
+					break;
+				case "mouseover":
+					event.target.style.backgroundcolor = "red";
+					break;
+				case "mouseout":
+					event.target.style.backgroundcolor = "";
+					break;
+			}
+		};
+		 
+		btn.onclick = handler;
+		div.onmouseover = function (event) {
+			// event.currentTarget.style.backgroundcolor = "red";
+			// alert("alertaaa")	;
+			this.style.font-size = "18px";
+		};
+		btn.onmouseout = handler;
+	</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="button" class="input" id="btn" value="按钮" />
+	<script type="text/javascript">
+		var btn = document.getElementById('btn');
+		btn.onclick = function (event) {
+			alert(event.currentTarget === this);  //true
+			alert(event.target === this);  //true
+			alert("Hello!");  //Hello!
+		};
+		document.body.onclick = function (event) {
+			alert(event.currentTarget === document.body);  //true
+			alert(this === document.body);  //true
+			alert(event.target === btn);  //true
+			alert("World!");  //World!
+		}
+	</script>
+</body>
+</html>
