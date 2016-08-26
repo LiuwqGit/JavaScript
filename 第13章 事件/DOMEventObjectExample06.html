@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>eventPhase事件阶段</title>
+</head>
+<body>
+	<input type="button" class="input" id="myBtn" value="Click ME" />
+	<script type="text/javascript">
+		var btn = document.getElementById('myBtn');
+		btn.onclick = function (event) {
+			alert(event.eventPhase + "btn点击事件"); //2btn点击事件
+		};
+		document.body.addEventListener("click", function (event) {
+			alert(event.eventPhase + "添加事件"); //1添加事件
+		}, true);//第三个参数，true表示捕获阶段，false表示冒泡阶段
+		document.body.onclick = function (event) {
+			alert(event.eventPhase + "body点击事件"); //3body点击事件
+		};
+		//最后的弹出框顺序是：1》2》3
+	</script>
+</body>
+</html>
