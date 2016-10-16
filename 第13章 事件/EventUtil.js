@@ -31,10 +31,12 @@ var EventUtil = {
         return event ? event : window.event;
     },
 
+    //返回事件的目标
     getTarget: function (event) {
         return event.target || event.srcElement;
     },
 
+    //取消事件的默认行为
     preventDefault: function (event) {
         if (event.preventDefault) {
             event.preventDefault();
@@ -58,6 +60,19 @@ var EventUtil = {
             event.stopPropagation();
         } else {
             event.cancelBubble = true;
+        }
+    },
+
+    //鼠标事件 mouseover和mouseout
+    getRelatedTarget: function (event) {
+        if (event.relatedTarget) {
+            return event.relatedTarget;
+        } else if (event.toElement) {
+            return event.toElement;
+        } else if (event.fromElement) {
+            return event.fromElement;
+        } else {
+            return null;
         }
     }
 };
