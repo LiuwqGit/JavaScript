@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script src="EventUtil.js"></script>
 </head>
 <body>
 <div>
@@ -12,7 +13,7 @@
     var textbox = document.getElementById("myText");
     EventUtil.addHandler(textbox, "textInput", function (event) {
         event = EventUtil.getEvent(event);
-        alert(event.data);
+        alert(event.data);//显示 用户输入的字符
     })
 </script>
 </body>
