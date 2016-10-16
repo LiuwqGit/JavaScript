@@ -17,7 +17,12 @@
 </ul>
 <script type="application/javascript">
     EventUtil.addHandler(window, "load", function (event) {
+        alert("loading");
         var div = document.getElementById("myDiv");
+
+        EventUtil.addHandler(div, "click", function (event) {
+            alert("mouse click Right Button");
+        });
 
         EventUtil.addHandler(div, "contextmenu", function (event) {
             event = EventUtil.getEvent(event);
