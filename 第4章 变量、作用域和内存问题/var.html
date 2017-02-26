@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>var </title>
+</head>
+<body>
+	<div onclick="createURL()">变量、作用域</div>
+	<script type="text/javascript">
+		function createURL() {
+			var qs = "?debug=true";
+			alert("1: " + url);
+			with(location) {
+				alert(href);
+				alert("2: " + url);
+				var url = href + qs;
+				var a = 'a';
+				alert("3: " + a + " -- " + url);
+			}
+
+			function with1() {
+				alert(location.href);
+				var url1 = location.href + qs;
+				alert(url1);
+				alert("url1: " + url1);
+			}
+			with1();
+			// alert("url1: " + url1);//会报错，url1未定义
+			alert("4: " + a + " -- " + url);
+			alert(url);
+			 
+		}
+	</script>
+</body>
+
+</html>
