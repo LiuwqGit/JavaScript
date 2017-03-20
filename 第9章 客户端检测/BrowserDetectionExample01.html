@@ -6,6 +6,7 @@
     <title>浏览器 呈现引擎检测</title>
 </head>
 <body>
+浏览器 呈现引擎检测
 <script>
     var client = function () {
         var engine = {
@@ -60,6 +61,7 @@
          *   5:IE
          * */
         var ua = navigator.userAgent;
+        console.log(ua);
         if (window.opera) {
             engine.ver = browser.ver = window.opera.version();
             engine.opera = browser.opera = parseFloat(engine.ver);
@@ -69,8 +71,22 @@
 
             //确定是Chrome还是Safari
             if (/Chrome\/(\S+)/.test(ua)) {
+                console.log("//确定是Chrome还是Safari")
                 browser.ver = RegExp["$1"];
+                console.log('browser.ver: ' + browser.ver);
                 browser.chrome = parseFloat(browser.ver);
+                console.log('browser.chrome: ' + browser.chrome);
+
+                
+        //检测浏览器
+        // browser.ie = engine.ie;
+        engine.ie = browser.ie;
+        console.log('browser.ie: ' + browser.ie);
+        // browser.opera = engine.opera;
+        engine.opera = browser.opera;
+        console.log('browser.opera: ' + browser.opera);
+
+
             } else if (/Version\/(\S+)/.test(ua)) {
                 browser.ver = RegExp["$1"];
                 browser.safari = parseFloat(browser.ver);
@@ -106,7 +122,9 @@
 
         //检测浏览器
         browser.ie = engine.ie;
+        console.log('browser.ie: ' + browser.ie);
         browser.opera = engine.opera;
+        console.log('browser.opera: ' + browser.opera);
 
         //检测平台
         var p = navigator.platform;
@@ -194,15 +212,21 @@
     if (client.engine.webkit) {
         if (client.browser.chorme) {
             //执行针对chrome的代码
+            alert('chrome')
         } else if (client.browser.safari) {
             //执行针对Safari的代码
+            alert('safari')
         }
     } else if (client.engine.gecko) {
         if (client.browser.firefox) {
             //执行针对Firefox的代码
+            alert('Firefox')
         } else {
             //执行针对其他Gecko 浏览器的代码
+            alert('other gecko')
         }
+    } else {
+        alert('other');
     }
 
 </script>
