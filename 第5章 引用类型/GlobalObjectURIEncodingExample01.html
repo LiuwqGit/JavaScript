@@ -6,14 +6,50 @@
 </head>
 <body>
 <script>
-/*
-*   encodeURI()不会对本事属于URI的特殊字符进行编码，例如冒号、正斜杠、问号和＃。
-*   encodeURIComponent()会对它发现的任何非标准字符进行编码。
- */
-    var uri = "http://www.wrox.com/illegal value.htm#start";
-    document.write(encodeURI(uri) + "<br />");  //  http://www.wrox.com/illegal%20value.htm#start
-    document.write(encodeURIComponent(uri) + "<br />"); //  http%3A%2F%2Fwww.wrox.com%2Fillegal%20value.htm%23start
+		/*
+		*   encodeURI()不会对本身属于URI的特殊字符进行编码，例如冒号、正斜杠、问号和＃。
+		*   encodeURIComponent()会对它发现的任何非标准字符进行编码。
+		*/
+    var uri = "http://www.wrox.com/illegal- value.htm#start";
+    document.write(encodeURI(uri) + "<br />");  
+    //  http://www.wrox.com/illegal-%20value.htm#start
+    document.write(encodeURIComponent(uri) + "<br />"); 
+    //  http%3A%2F%2Fwww.wrox.com%2Fillegal-%20value.htm%23start
 
+
+		/*	encodeURIComponent() 是对统一资源标识符(URI)的组成部分进行编码的方法。
+		它使用一到四个转义序列来表示字符串中的每个字符的UTF-8编码
+		（只有由两个Unicode代理区字符组成的字符才用四个转义字符编码）。*/
+		// encodeURIComponent 转义除了字母、数字、(、)、.、!、~、*、'、-和_之外的所有字符。
+		//注意，如果试图编码一个非高-低位完整的代理字符，将会抛出一个 URIError 错误
+
+		// 高低位完整,得到结果：%F0%90%8F%BF
+		console.log(encodeURIComponent('\uD800\uDFFF')); 
+		// 只有高位，将抛出异常：Uncaught URIError: URI malformed
+		// console.log(encodeURIComponent('\uD800'));
+		// 只有低位，将抛出异常：Uncaught URIError: URI malformed
+		// console.log(encodeURIComponent('\uDFFF'));
+		
+		//为了避免服务器收到不可预知的请求，对任何用户输入的作为URI部分的内容你都需要用encodeURIComponent进行转义
+		var fileName = 'my file(2).txt';
+		var header = "Content-Disposition: attachment; filename*=UTF-8''" + encodeRFC5987ValueChars(fileName);
+
+		console.log(header);
+
+		function encodeRFC5987ValueChars(str) {
+			// return encodeURIComponent(str);
+			//Content-Disposition: attachment; filename*=UTF-8''my%20file(2).txt
+
+			// return encodeURIComponent(str).replace(/['()]/g, escape);
+			//Content-Disposition: attachment; filename*=UTF-8''my%20file%282%29.txt
+
+			// return encodeURIComponent(str).replace(/['()]/g, escape).replace(/\*/g, '%2A');
+			//Content-Disposition: attachment; filename*=UTF-8''my%20file%282%29.txt
+
+			return encodeURIComponent(str).replace(/['()]/g, escape).replace(/\*/g, '%2A').replace(/%(?:7C|60|5E)/g, unescape);
+			//Content-Disposition: attachment; filename*=UTF-8''my%20file%282%29.txt
+
+		}
 
 </script>
 </body>
