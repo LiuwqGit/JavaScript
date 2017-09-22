@@ -1,27 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>eventPhase事件阶段</title>
+  <meta charset="UTF-8">
+  <title>eventPhase事件阶段</title>
 </head>
+
 <body>
-	<input type="button" class="input" id="myBtn" value="Click ME" />
-	<script type="text/javascript">
-		var btn = document.getElementById('myBtn');
-		btn.onclick = function (event) {
-			alert(event.eventPhase + "btn点击事件"); //2btn点击事件
-			alert(event.target === this);
-			alert(event.currentTarget === this);
-			alert(event.target === event.currentTarget);
-		};
-		document.body.addEventListener("click", function (event) {
-			alert(event.eventPhase + "添加事件"); //1添加事件
-		}, true);//第三个参数，true表示捕获阶段，false表示冒泡阶段
-		document.body.onclick = function (event) {
-			alert(event.eventPhase + "body点击事件"); //3body点击事件
-		};
-		//最后的弹出框顺序是：1》2》3
-		//处于  "目标对象" 上的时候，eventPhase值为2，this/currentTarget/target三者始终相等
-	</script>
+  <input type="button" class="input" id="myBtn" value="Click ME" />
+  <script type="text/javascript">
+  var btn = document.getElementById('myBtn');
+  btn.onclick = function(event) {
+    alert(event.eventPhase + "btn点击事件"); // 2btn点击事件
+    alert(event.target === this); // true
+    alert(event.currentTarget === this); // true
+    alert(event.target === event.currentTarget); // true
+  };
+  document.body.addEventListener("click", function(event) {
+    alert(event.eventPhase + "添加事件_1"); // 1添加事件_1
+  }, true); // 第三个参数，true表示捕获阶段，false表示冒泡阶段
+  document.body.addEventListener("click", function(event) {
+    alert(event.eventPhase + "添加事件_2"); // 3添加事件_2
+  }, false); // 第三个参数，true表示捕获阶段，false表示冒泡阶段
+  document.body.onclick = function(event) {
+    alert(event.eventPhase + "body点击事件"); // 3body点击事件
+  };
+  // 最后的弹出框顺序是：1》2》3
+  // 处于  "目标对象" 上的时候，eventPhase值为2，this/currentTarget/target三者始终相等
+  // eventPhase 属性返回事件传播的当前阶段。它的值是下面的三个常量之一，它们分别表示捕获阶段、正常事件派发和起泡阶段。
+  // 常量	值
+  // Event.CAPTURING_PHASE	1
+  // Event.AT_TARGET	2
+  // Event.BUBBLING_PHASE	3
+  </script>
 </body>
+
 </html>
