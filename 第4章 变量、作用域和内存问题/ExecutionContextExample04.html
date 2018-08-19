@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>块级作用域</title>
+</head>
+
+<body>
+  <script>
+    function add(num1, num2) {
+      var sum = num1 + num2
+      return sum
+    }
+    console.log(add(1, 2)) // 3
+    // console.log(sum) // Uncaught ReferenceError: sum is not defined
+
+    function add1(num1, num2) {
+      sum1 = num1 + num2
+      return sum1
+    }
+    console.log(add1(1,5)) // 6
+    console.log(sum1) // 6
+    console.log(window.sum1) // 6
+  </script>
+</body>
+
+</html>

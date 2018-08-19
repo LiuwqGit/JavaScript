@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>查询标识符</title>
+</head>
+
+<body>
+  <script>
+    var color = 'blue'
+
+    function getColor() {
+      return color
+    }
+
+    console.log(getColor()) // blue
+    /**
+     * 第一步 搜索getColor()的变量对象，查找其中是否包含一个名为color的标识符
+     * 第二步 没有找到的情况下，搜索继续到下一个变量对象(全局环境的变量对象)，然后找到了名为color的标识符
+     * 则搜索停止
+     * */
+
+     function getAnotherColor() {
+       var color = 'red'
+       return color
+     }
+
+     console.log(getAnotherColor()) // red
+     console.log(window.color) // blue
+      /**
+     * 第一步 搜索getColor()的变量对象，查找其中是否包含一个名为color的标识符，
+     * 发现找到了名为color的标识符，则搜索停止
+     * */
+  </script>
+</body>
+
+</html>
