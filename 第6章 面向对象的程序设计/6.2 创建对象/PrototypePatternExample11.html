@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>原生对象的原型</title>
+</head>
+<body>
+  <script>
+    /**
+     * 给原生对象的原型添加方法startsWith。
+     * 在es6中，对字符串已经提供了startsWith方法。
+     * 修改原生对象的原型，在产品化过程中，不建议这么做。
+     * */
+    String.prototype.startsWith = function(text) {
+      return this.indexOf(text) === 0
+    }
+    var str = 'Hello World!'
+    console.log(str.startsWith('Hello')) // true
+  </script>
+  <script>
+    /**
+     * 在es6中，用来确定一个字符串是否包含另一个字符串，新增了三个方法
+     * includes(): 返回布尔值，表示是否找到了参数字符串
+     * startsWith(): 返回布尔值，表示参数字符串是否在源字符串的头部。
+     * endsWith(): 返回布尔值，表示参数字符串是否在源字符串的尾部
+     * */
+     var s = 'Hello World!'
+     s.startsWith('Hello') // true
+     s.endsWith('!') // true
+     s.includes('w') // true
+
+     /**
+      * 这三个方法，都支持第二个参数，表示开始搜索的位置。
+      * 而，endsWith向前搜索。其他两个向后搜索。
+      * */
+     s.startsWith('World', 6) // true
+     s.endsWith('Hello', 5) // true
+     s.includes('Hello', 6) // false
+  </script>
+</body>
+</html>
