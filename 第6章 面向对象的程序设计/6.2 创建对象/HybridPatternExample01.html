@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>组合使用构造函数和原型模式</title>
+</head>
+
+<body>
+  <script>
+    /**
+     * 组合使用构造函数和原型模式来创建对象
+     * 构造函数模式用于定义实例属性
+     * 原型模式用于定义方法和共享的属性
+     * 这是用来定义引用类型的一种默认模式
+     * */
+    function Person(name, age, job) {
+      this.name = name
+      this.age = age
+      this.job = job
+      this.friends = ['Shell', 'Cmd']
+    }
+    Person.prototype = {
+      counstructor = Person,
+      sayName: function () {
+        console.log(this.name)
+      }
+    }
+
+    var p1 = new Person('wei', 18, 'Software Engineer')
+    var p2 = new Person('qin', 20, 'Doctor')
+    p1.friends.push('Vim')
+    console.log(p1.friends) // ['Shell', 'Cmd', 'Vim']
+    console.log(p2.friends) // ['Shell', 'Cmd']
+    console.log(p1.friends === p2.friends) // false
+    console.log(p1.sayName === p2.sayName) // true
+  </script>
+</body>
+
+</html>
